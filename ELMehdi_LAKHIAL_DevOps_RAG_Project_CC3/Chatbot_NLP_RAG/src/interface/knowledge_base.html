@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGISO AI - Knowledge Base</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="main-wrapper">
+
+    <nav class="sidebar">
+        <div class="logo"><i class="fa-solid fa-layer-group"></i></div>
+        <ul class="nav-links">
+            <li><a href="convirsation.html"><i class="fa-solid fa-inbox"></i></a></li>
+            <li><a href="ckeck_project.html"><i class="fa-regular fa-square-check"></i></a></li>
+            <li><a href="messanger.html"><i class="fa-regular fa-paper-plane"></i></a></li>
+            <li><a href="chart_community.html"><i class="fa-solid fa-user-group"></i></a></li>
+            <li><a href="dash.html"><i class="fa-solid fa-chart-pie"></i></a></li>
+            <li><a href="cube_community.html"><i class="fa-solid fa-cube"></i></a></li>
+            <li class="active"><a href="knowledge_base.html"><i class="fa-solid fa-book-open"></i></a></li>
+            <li><a href="chat_t.html"><i class="fa-solid fa-comment-dots"></i></a></li>
+        </ul>
+        <div class="user-profile-icon">
+            <img src="" id="sidebarAvatar">
+        </div>
+    </nav>
+
+    <div class="content-area">
+
+        <div class="top-nav">
+            <div class="top-nav-left">
+                <div class="page-title">
+                    <i class="fa-solid fa-book-open"></i>
+                    Knowledge Base
+                </div>
+                <div class="search-wrap">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search-input" id="globalSearch" placeholder="Search files, users…">
+                </div>
+            </div>
+            <div class="top-nav-right">
+                <button class="nav-action-btn" id="themeBtn">
+                    <i class="fa-solid fa-moon"></i> Theme
+                </button>
+                <button class="btn-primary" id="uploadBtn">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Upload File
+                </button>
+                <div class="user-chip" id="userChip">
+                    <img src="" id="chipAvatar">
+                    <span id="chipName">Admin</span>
+                    <span class="role-badge" id="chipRole">admin</span>
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="body-wrap">
+
+            
+            <div class="left-panel">
+                <div class="panel-section">
+                    <div class="panel-section-title">My Files</div>
+                    <div class="filter-item active" data-filter="mine">
+                        <i class="fa-regular fa-folder"></i> My Documents
+                        <span class="filter-count" id="cntMine">0</span>
+                    </div>
+                    <div class="filter-item" data-filter="all" id="filterAll">
+                        <i class="fa-solid fa-layer-group"></i> All Documents
+                        <span class="filter-count" id="cntAll">0</span>
+                    </div>
+                </div>
+
+                <div class="panel-section">
+                    <div class="panel-section-title">File Type</div>
+                    <div class="filter-item" data-filter="pdf">
+                        <i class="fa-regular fa-file-pdf" style="color:#ef4444"></i> PDF
+                        <span class="filter-count" id="cntPdf">0</span>
+                    </div>
+                    <div class="filter-item" data-filter="excel">
+                        <i class="fa-regular fa-file-excel" style="color:#22c55e"></i> Excel / CSV
+                        <span class="filter-count" id="cntXls">0</span>
+                    </div>
+                    <div class="filter-item" data-filter="word">
+                        <i class="fa-regular fa-file-word" style="color:#3b82f6"></i> Word / Docs
+                        <span class="filter-count" id="cntDoc">0</span>
+                    </div>
+                    <div class="filter-item" data-filter="other">
+                        <i class="fa-regular fa-file" style="color:#94a3b8"></i> Other
+                        <span class="filter-count" id="cntOther">0</span>
+                    </div>
+                </div>
+
+                <div class="panel-section" id="statusFilters">
+                    <div class="panel-section-title">Status</div>
+                    <div class="filter-item" data-filter="ready">
+                        <i class="fa-solid fa-circle-check" style="color:#22c55e"></i> Ready
+                        <span class="filter-count" id="cntReady">0</span>
+                    </div>
+                    <div class="filter-item" data-filter="pending">
+                        <i class="fa-solid fa-clock" style="color:#ca8a04"></i> Pending
+                        <span class="filter-count" id="cntPending">0</span>
+                    </div>
+                </div>
+
+                <div style="flex:1"></div>
+
+                <div style="padding:0 18px 18px">
+                    <div class="storage-box">
+                        <div class="storage-label">
+                            <span>Storage Used</span>
+                            <span id="storageText">0 MB / ∞</span>
+                        </div>
+                        <div class="storage-bar">
+                            <div class="storage-fill" id="storageFill" style="width:0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="right-panel">
+
+                
+                <div class="toolbar">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="files">
+                            <i class="fa-solid fa-file-lines"></i> Documents
+                            <span class="tab-count" id="tabCntFiles">0</span>
+                        </div>
+                        <div class="tab" data-tab="users" id="usersTab">
+                            <i class="fa-solid fa-users"></i> Users
+                            <span class="tab-count" id="tabCntUsers">0</span>
+                        </div>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="grid" title="Grid view">
+                                <i class="fa-solid fa-grip"></i>
+                            </button>
+                            <button class="view-btn" data-view="list" title="List view">
+                                <i class="fa-solid fa-list"></i>
+                            </button>
+                        </div>
+                        <select class="sort-select" id="sortSelect">
+                            <option value="date_desc">Newest first</option>
+                            <option value="date_asc">Oldest first</option>
+                            <option value="name_asc">Name A→Z</option>
+                            <option value="name_desc">Name Z→A</option>
+                            <option value="size_desc">Largest first</option>
+                        </select>
+                    </div>
+                </div>
+
+               
+                <div class="files-container" id="filesPanel">
+                    
+                    <div id="quickAccessSection">
+                        <div class="section-heading">
+                            Quick Access
+                            <a onclick="clearFilters()">View All</a>
+                        </div>
+                        <div class="files-grid" id="quickGrid"></div>
+                    </div>
+
+                    
+                    <div class="section-heading" id="recentLabel">
+                        Recent Files
+                    </div>
+
+                    
+                    <div class="files-grid" id="mainGrid"></div>
+
+                    
+                    <div class="files-list" id="mainList">
+                        <div class="list-header">
+                            <div>Name</div>
+                            <div>Uploaded by</div>
+                            <div>Date</div>
+                            <div>Size</div>
+                            <div>Actions</div>
+                        </div>
+                        <div id="listRows"></div>
+                    </div>
+
+                    <div class="empty-state" id="emptyFiles" style="display:none">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <h3>No files found</h3>
+                        <p>Upload your first document or change the filter.</p>
+                    </div>
+                </div>
+
+                <div class="users-panel" id="usersPanel">
+                    <div class="users-toolbar">
+                        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+                            <div style="font-size:14px;font-weight:700;color:var(--text-dark)">Team Members</div>
+                            
+                            <div id="userFilterBtns" style="display:flex;gap:6px">
+                                <button class="row-btn user-filter-btn active-filter" data-uf="all" onclick="filterUsers('all',this)">All</button>
+                                <button class="row-btn user-filter-btn" data-uf="admin"   onclick="filterUsers('admin',this)">Admin</button>
+                                <button class="row-btn user-filter-btn" data-uf="manager" onclick="filterUsers('manager',this)">Manager</button>
+                                <button class="row-btn user-filter-btn" data-uf="user"    onclick="filterUsers('user',this)">User</button>
+                                <button class="row-btn user-filter-btn" data-uf="mine"    onclick="filterUsers('mine',this)">
+                                    <i class="fa-solid fa-user"></i> Created by me
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn-primary" id="createUserBtn">
+                            <i class="fa-solid fa-user-plus"></i> Create User
+                        </button>
+                    </div>
+                    <div class="users-table-wrap">
+                        <table class="utbl" id="usersTable">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Role</th>
+                                    <th>Created by</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTbody"></tbody>
+                        </table>
+                        <div class="empty-state" id="emptyUsers" style="display:none">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>No users found</h3>
+                            <p>Create your first team member.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-overlay" id="uploadModal">
+    <div class="modal-card">
+        <div class="modal-header">
+            <div class="modal-title"><i class="fa-solid fa-cloud-arrow-up" style="color:var(--bg-dark);margin-right:8px"></i>Upload Document</div>
+            <button class="modal-close" onclick="closeModal('uploadModal')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+           
+            <div id="step1">
+                <div class="drop-zone" id="dropZone">
+                    <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.pptx">
+                    <div class="drop-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <div class="drop-text">Drop your file here or click to browse</div>
+                    <div class="drop-sub">PDF, Word, Excel, CSV, PPTX · Max 50 MB</div>
+                </div>
+
+                <div class="selected-file" id="selectedFile">
+                    <div class="sf-icon" id="sfIcon"></div>
+                    <div class="sf-info">
+                        <div class="sf-name" id="sfName">—</div>
+                        <div class="sf-size" id="sfSize">—</div>
+                    </div>
+                    <button class="sf-remove" onclick="clearFile()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label">Upload to (id_load)</label>
+                    <select class="form-select" id="idLoadSelect">
+                        <option value="admin">admin</option>
+                        <option value="manager">manager</option>
+                        <option value="user">user</option>
+                    </select>
+                </div>
+            </div>
+            <div id="step2" style="display:none">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:12px 14px;background:rgba(34,197,94,0.07);border:1px solid #bbf7d0;border-radius:var(--radius-md)">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a"></i>
+                    <div>
+                        <div style="font-size:13px;font-weight:600;color:#15803d">File uploaded!</div>
+                        <div style="font-size:11px;color:#16a34a" id="uploadedFileName">—</div>
+                    </div>
+                </div>
+                <div class="form-label" style="margin-bottom:10px">Processing Parameters</div>
+                <div class="form-row-2">
+                    <div class="form-row">
+                        <label class="form-label">Chunk Size</label>
+                        <input class="form-input" type="number" id="chunkSize" value="59" min="10" max="500">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Overlap Size</label>
+                        <input class="form-input" type="number" id="overlapSize" value="20" min="0" max="100">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">Reset existing chunks?</label>
+                    <select class="form-select" id="resetChunks">
+                        <option value="0">No — keep existing</option>
+                        <option value="1">Yes — reset</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="upload-progress" id="uploadProgress">
+                <div class="progress-label">
+                    <span id="progressLabel">Uploading…</span>
+                    <span id="progressPct">0%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-cancel-btn" onclick="closeModal('uploadModal')">Cancel</button>
+            <button class="btn-primary" id="uploadActionBtn" onclick="handleUploadAction()">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span id="uploadActionLabel">Upload</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay user-modal" id="userModal">
+    <div class="modal-card">
+        <div class="modal-header">
+            <div class="modal-title"><i class="fa-solid fa-user-plus" style="color:var(--bg-dark);margin-right:8px"></i>Create User</div>
+            <button class="modal-close" onclick="closeModal('userModal')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-row">
+                <label class="form-label">Email Address</label>
+                <input class="form-input" type="email" id="newUserEmail" placeholder="user@example.com">
+            </div>
+            <div class="form-row">
+                <label class="form-label">Password</label>
+                <input class="form-input" type="password" id="newUserPass" placeholder="••••••••">
+            </div>
+            <div class="form-row">
+                <label class="form-label">Role</label>
+                <select class="form-select" id="newUserRole">
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-cancel-btn" onclick="closeModal('userModal')">Cancel</button>
+            <button class="btn-primary" id="createUserConfirm" onclick="doCreateUser()">
+                <i class="fa-solid fa-user-plus"></i> Create
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"><i id="toastIcon"></i><span id="toastMsg"></span></div>
+
+<script src="main/knowledge.js"></script>
+</body>
+</html>

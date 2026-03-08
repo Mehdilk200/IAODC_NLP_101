@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGISO AI - Chatbot</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <nav class="sidebar">
+        <div class="logo"><i class="fa-solid fa-layer-group"></i></div>
+        <ul class="nav-links">
+            <li><a href="convirsation.html"><i class="fa-solid fa-inbox"></i></a></li>
+            <li><a href="ckeck_project.html"><i class="fa-regular fa-square-check"></i></a></li>
+            <li><a href="messanger.html"><i class="fa-regular fa-paper-plane"></i></a></li>
+            <li><a href="chart_community.html"><i class="fa-solid fa-user-group"></i></a></li>
+            <li><a href="dash.html"><i class="fa-solid fa-chart-pie"></i></a></li>
+            <li><a href="cube_community.html"><i class="fa-solid fa-cube"></i></a></li>
+            <li><a href="knowledge_base.html"><i class="fa-solid fa-book-open"></i></a></li>
+            <li class="active"><a href="chat_t.html"><i class="fa-solid fa-comment-dots"></i></a></li>
+        </ul>
+        <div class="user-profile-icon">
+            <img src="" alt="Profile" id="sidebarAvatar">
+        </div>
+    </nav>
+
+    <aside class="wide-sidebar">
+        <div class="wide-sidebar-header">
+            <div class="brand">
+                <div class="brand-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="brand-name">RAGISO <span>1.0</span></span>
+            </div>
+            <button class="new-conv-btn" id="newConvBtn">
+                <i class="fa-solid fa-plus"></i> New Conversation
+            </button>
+            <div class="conv-search-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="conv-search" id="convSearch" placeholder="Search conversations…" type="text">
+            </div>
+        </div>
+
+        <div class="conv-list-wrap" id="convListWrap">
+            <div class="conv-empty" id="convEmpty">
+                <i class="fa-regular fa-comments"></i>
+                <p>No conversations yet.<br>Start a new one!</p>
+            </div>
+        </div>
+
+        <div class="sidebar-user-info">
+            <img class="sui-avatar" src="" id="userAvatar">
+            <div class="sui-details">
+                <div class="sui-name" id="userNameDisplay">User</div>
+                <span class="sui-role" id="userRoleDisplay">user</span>
+            </div>
+            <button class="logout-btn" id="logoutBtn" title="Logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+        </div>
+    </aside>
+
+   
+    <main class="content-area">
+
+        
+        <header class="top-nav">
+            <div class="top-nav-left">
+                <div class="conv-title-display placeholder" id="convTitleDisplay">
+                    Select or create a conversation
+                </div>
+                <span class="model-badge">RAGISO v1.0</span>
+            </div>
+            <div class="top-actions">
+                <button class="upgrade-btn"><i class="fa-solid fa-crown"></i> Upgrade</button>
+                <i class="fa-regular fa-circle-question" style="cursor:pointer"></i>
+                
+                <i class="fa-solid fa-moon" id="themeToggleIcon" style="cursor:pointer" title="Toggle dark mode"></i>
+                <img src="" class="mini-avatar" id="topAvatar">
+            </div>
+        </header>
+
+        <section class="welcome-section" id="welcomeSection">
+            <div class="welcome-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h1>Welcome to RAGISO AI</h1>
+            <p>Select a conversation or start a new one to chat with your documents.</p>
+            <div class="cards-grid">
+                <div class="promo-card" onclick="document.getElementById('newConvBtn').click()">
+                    <i class="fa-solid fa-plus"></i>
+                    <h3>New Conversation</h3>
+                    <p>Start a fresh chat with your uploaded documents.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <h3>Document RAG</h3>
+                    <p>Ask questions directly from your uploaded PDFs and files.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h3>Full History</h3>
+                    <p>All your past conversations are saved and searchable.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="chat-view" id="chatView">
+            
+            <div class="messages-area" id="messagesArea">
+                <div class="typing-indicator" id="typingIndicator">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="chat-container-glow" id="chatGlow">
+                    <div class="chat-inner">
+                        <div class="chat-header-row">
+                            <span class="credits" id="creditsDisplay">RAG Mode Active</span>
+                            <div class="selectors">
+                                <button class="sel-btn" id="idLoadBtn">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span id="idLoadLabel">admin</span>
+                                    <i class="fa-solid fa-chevron-down" style="font-size:10px"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <textarea id="msgInput" placeholder="Ask anything about your documents…" rows="2"></textarea>
+
+                        <div class="chat-footer-row">
+                            <div class="chat-tools">
+                                <span><i class="fa-solid fa-paperclip"></i> Attach</span>
+                                <span><i class="fa-solid fa-microphone"></i> Voice</span>
+                                <span><i class="fa-solid fa-sliders"></i> Settings</span>
+                            </div>
+                            <div class="send-action">
+                                <span class="count" id="charCount">0/3000</span>
+                                <div class="send-btn-group">
+                                    <button class="main-send" id="sendBtn">
+                                        <span class="send-label"><i class="fa-solid fa-paper-plane"></i> Send</span>
+                                        <div class="send-spinner"></div>
+                                    </button>
+                                    <button class="icon-send" id="clearBtn" title="Clear chat">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="disclaimer">Output may contain inaccuracies. Model: RAGISO RAG v1.0</p>
+            </div>
+        </div>
+
+    </main>
+</div>
+<div class="modal-overlay" id="newConvModal">
+    <div class="modal-card">
+        <div class="modal-title">New Conversation</div>
+        <div class="modal-sub">Give your conversation a name</div>
+        <input class="modal-input" id="newConvTitle" type="text" placeholder="e.g. Project analysis, CV review…" maxlength="80">
+        <div class="modal-actions">
+            <button class="modal-cancel" id="modalCancel">Cancel</button>
+            <button class="modal-confirm" id="modalConfirm">
+                <i class="fa-solid fa-plus"></i> Create
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="toast" id="toast">
+    <i class="fa-solid fa-circle-info" id="toastIcon"></i>
+    <span id="toastMsg"></span>
+</div>
+
+<script src="main/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+</body>
+</html>

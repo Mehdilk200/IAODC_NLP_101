@@ -1,0 +1,49 @@
+# Web Server & Settings
+fastapi
+uvicorn
+python-dotenv
+pydantic>=2.10.0
+pydantic-settings
+python-multipart
+
+# Database (MongoDB Async)
+motor
+langchain-mongodb
+
+# LangChain Core & Workflow
+langchain
+langchain-chroma
+langchain-core
+langchain-text-splitters
+langchain-chroma>=0.1.0
+
+# Google GenAI (Gemini)
+langchain-google-genai
+
+# Document Parsing (PDF, Docx)
+pymupdf
+pypdf
+docx2txt
+pymongo
+python-docx
+
+# Utilities & Async
+aiohttp
+requests
+aiofiles
+
+#user password
+
+passlib[bcrypt]
+python-jose[cryptography]
+pydantic[email]
+bcrypt
+
+
+# file allow
+
+openpyxl
+pandas
+python-pptx
+
+

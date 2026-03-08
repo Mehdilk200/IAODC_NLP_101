@@ -1,0 +1,32 @@
+services:
+  motor:
+    
+    image: my-rag-app:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      extra_hosts:
+      - "host.docker.internal:host-gateway"
+    
+    container_name: motor_container
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../src/.env
+    environment:
+      - PYTHONPATH=/app/src
+      - T=my-rag-app
+    volumes:
+      - ..:/app
+      - ./mongodb:/data/db
+      - ./data/chroma:/app/data/chroma
+    working_dir: /app
+    
+    networks:
+      - motor-network
+    restart: always
+
+networks:
+  motor-network:
+    driver: bridge
+

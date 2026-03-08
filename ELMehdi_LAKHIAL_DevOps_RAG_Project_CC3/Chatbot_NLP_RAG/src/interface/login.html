@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGISO AI - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="page-wrapper">
+
+        <div class="panel-left">
+            <div class="panel-logo"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="panel-title">RAGISO <span>AI</span></div>
+            <p class="panel-sub">Intelligent Document Assistant<br>powered by RAG technology</p>
+            <ul class="feature-list">
+                <li><i class="fa-solid fa-bolt"></i> Fast RAG-powered answers</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Role-based access control</li>
+                <li><i class="fa-solid fa-comments"></i> Conversation history</li>
+                <li><i class="fa-solid fa-file-lines"></i> Multi-document support</li>
+            </ul>
+            <div class="version-badge">v 1.0 · chatbot_SAME</div>
+        </div>
+        <div class="panel-right">
+            <div class="form-heading">Sign in to <span>RAGISO</span></div>
+            <p class="form-sub">Enter your credentials to access your workspace</p>
+
+            <div class="alert hidden" id="alertBox">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span id="alertMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <div class="input-wrap">
+                    <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+                    <i class="fa-regular fa-envelope ico"></i>
+                </div>
+                <div class="field-err" id="emailErr">Please enter a valid email</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-wrap">
+                    <input type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+                    <i class="fa-solid fa-lock ico"></i>
+                    <button class="pass-toggle" id="togglePass" type="button" tabindex="-1">
+                        <i class="fa-regular fa-eye" id="toggleIco"></i>
+                    </button>
+                </div>
+                <div class="field-err" id="passErr">Password is required</div>
+            </div>
+
+            <div class="form-group">
+                <label>Role</label>
+                <div class="role-grid">
+                    <button class="role-btn selected" data-role="admin" type="button">
+                        <i class="fa-solid fa-shield-halved"></i> Admin
+                    </button>
+                    <button class="role-btn" data-role="manager" type="button">
+                        <i class="fa-solid fa-briefcase"></i> Manager
+                    </button>
+                    <button class="role-btn" data-role="user" type="button">
+                        <i class="fa-regular fa-user"></i> User
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn-login" id="loginBtn" type="button">
+                <span class="btn-text"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In</span>
+                <div class="spinner"></div>
+            </button>
+
+            <div class="session-box" id="sessionBox">
+                <div class="s-row"><span>User ID</span><span class="s-val" id="sId">—</span></div>
+                <div class="s-row"><span>Email</span><span class="s-val" id="sEmail">—</span></div>
+                <div class="s-row"><span>Role</span><span class="s-val" id="sRole">—</span></div>
+                <div class="s-row"><span>Token</span><span class="s-val" id="sToken">—</span></div>
+            </div>
+
+            <div class="redirect-bar" id="redirectBar">
+                <i class="fa-solid fa-circle-check"></i>
+                Redirecting in <span class="cd" id="cd">3</span>s…
+            </div>
+
+            <div class="divider">or</div>
+            <div class="footer-note">No account? <a href="#">Contact your admin</a></div>
+        </div>
+    </div>
+
+    <script src="main/login.js"></script>
+        
+</body>
+</html>
