@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SentimentIQ – AI Review Intelligence</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+<div id="cursor-glow"></div>
+
+
+<div id="toast-wrap"></div>
+
+
+<nav class="nav" id="nav">
+  <div class="nav-glass">
+    <a href="#home" class="nav-logo">
+      <div class="logo-mark">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M14 2L26 8V20L14 26L2 20V8L14 2Z" stroke="#ff9900" stroke-width="1.5" fill="none"/>
+          <path d="M14 8L20 11V17L14 20L8 17V11L14 8Z" fill="#ff9900" opacity="0.3"/>
+          <circle cx="14" cy="14" r="3" fill="#ff9900"/>
+        </svg>
+      </div>
+      <span class="logo-text">Sentiment<span class="logo-accent">IQ</span></span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#home" class="nl" data-label="Home">Home</a>
+      <a href="#products" class="nl" data-label="Products">Products</a>
+      <a href="#analytics" class="nl" data-label="Analytics">Analytics</a>
+      <a href="#ai-analyzer" class="nl" data-label="AI Analyzer">AI Analyzer</a>
+    </div>
+
+    <div class="nav-right">
+      <div class="nav-search">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="Search products…" autocomplete="off"/>
+      </div>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">BERT Online</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <!-- Mesh background -->
+  <div class="hero-mesh"></div>
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Floating ambient orbs -->
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-dot"></div>
+        <span>Powered by BERT · FastAPI · Real-time NLP</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="ht-line ht-l1">AI-Powered Review</span>
+        <span class="ht-line ht-l2">Sentiment <span class="ht-glow">Intelligence</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Analyze product reviews instantly using BERT deep learning models<br/>
+        and extract actionable customer insights at scale.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#products" class="btn-glow">
+          <span class="btn-glow-inner">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Analyze Reviews
+          </span>
+          <div class="btn-glow-effect"></div>
+        </a>
+        <a href="#analytics" class="btn-ghost-hero">
+          View Analytics <span>→</span>
+        </a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="hm-item">
+          <span class="hm-val" data-count="98.2">0</span><span class="hm-unit">%</span>
+          <span class="hm-label">BERT Accuracy</span>
+        </div>
+        <div class="hm-sep"></div>
+        <div class="hm-item">
+          <span class="hm-val" data-count="50">0</span><span class="hm-unit">ms</span>
+          <span class="hm-label">Avg Inference</span>
+        </div>
+        <div class="hm-sep"></div>
+        <div class="hm-item">
+          <span class="hm-val" data-count="40">0</span><span class="hm-unit">+</span>
+          <span class="hm-label">Products</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating cards -->
+    <div class="hero-cards">
+      <div class="hcard hcard-1">
+        <div class="hcard-header">
+          <div class="hcard-icon pos">😊</div>
+          <span class="hcard-badge pos-badge">Positive</span>
+        </div>
+        <div class="hcard-text">"Outstanding quality, exceeded all expectations!"</div>
+        <div class="hcard-bar">
+          <div class="hcard-bar-fill" style="width:94%"></div>
+        </div>
+        <div class="hcard-conf">Confidence: 94.7%</div>
+      </div>
+      <div class="hcard hcard-2">
+        <div class="hcard-header">
+          <div class="hcard-icon neg">😞</div>
+          <span class="hcard-badge neg-badge">Negative</span>
+        </div>
+        <div class="hcard-text">"Broke after two weeks. Very disappointing."</div>
+        <div class="hcard-bar">
+          <div class="hcard-bar-fill neg-fill" style="width:87%"></div>
+        </div>
+        <div class="hcard-conf">Confidence: 87.3%</div>
+      </div>
+      <div class="hcard hcard-3">
+        <div class="hcard-header">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#ff9900"/></svg>
+          <span style="font-size:.75rem;color:rgba(255,255,255,.5);margin-left:4px">Overall Score</span>
+        </div>
+        <div class="hcard-score">4.8 <span style="color:rgba(255,255,255,.3);font-size:.9rem">/ 5.0</span></div>
+        <div style="display:flex;gap:3px;margin-top:8px">
+          <div style="flex:1;height:4px;background:linear-gradient(90deg,#ff9900,#ffcc44);border-radius:4px"></div>
+          <div style="flex:1;height:4px;background:linear-gradient(90deg,#ff9900,#ffcc44);border-radius:4px"></div>
+          <div style="flex:1;height:4px;background:linear-gradient(90deg,#ff9900,#ffcc44);border-radius:4px"></div>
+          <div style="flex:1;height:4px;background:linear-gradient(90deg,#ff9900,#ffcc44);border-radius:4px"></div>
+          <div style="flex:.8;height:4px;background:linear-gradient(90deg,#ff9900,rgba(255,153,0,.3));border-radius:4px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue">
+    <div class="scroll-arrow"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+
+<section class="stats-section" id="analytics">
+  <div class="container">
+    <div class="section-badge">Analytics Dashboard</div>
+    <h2 class="section-title">Platform Intelligence at a Glance</h2>
+    <p class="section-sub">Real-time sentiment metrics across all analyzed products and reviews.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card sc-1" data-aos>
+        <div class="sc-glow"></div>
+        <div class="sc-top">
+          <div class="sc-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="sc-trend up">+12% ↑</div>
+        </div>
+        <div class="sc-num" id="s-total" data-target="0">0</div>
+        <div class="sc-label">Total Reviews</div>
+        <div class="sc-bar-track"><div class="sc-bar-fill" id="sb-total"></div></div>
+      </div>
+
+      <div class="stat-card sc-2" data-aos>
+        <div class="sc-glow pos-glow"></div>
+        <div class="sc-top">
+          <div class="sc-icon pos-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="sc-trend up">+8% ↑</div>
+        </div>
+        <div class="sc-num pos-col" id="s-pos" data-target="0">0</div>
+        <div class="sc-label">Positive Reviews</div>
+        <div class="sc-bar-track"><div class="sc-bar-fill pos-bar" id="sb-pos"></div></div>
+      </div>
+
+      <div class="stat-card sc-3" data-aos>
+        <div class="sc-glow neg-glow"></div>
+        <div class="sc-top">
+          <div class="sc-icon neg-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="sc-trend down">-3% ↓</div>
+        </div>
+        <div class="sc-num neg-col" id="s-neg" data-target="0">0</div>
+        <div class="sc-label">Negative Reviews</div>
+        <div class="sc-bar-track"><div class="sc-bar-fill neg-bar" id="sb-neg"></div></div>
+      </div>
+
+      <div class="stat-card sc-4" data-aos>
+        <div class="sc-glow orange-glow"></div>
+        <div class="sc-top">
+          <div class="sc-icon orange-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <div class="sc-trend up">4.6 ★</div>
+        </div>
+        <div class="sc-num orange-col" id="s-rating" data-target="0" data-float>0.0</div>
+        <div class="sc-label">Average Rating</div>
+        <div class="sc-bar-track"><div class="sc-bar-fill orange-bar" id="sb-rating"></div></div>
+      </div>
+    </div>
+
+    <!-- Viz Section -->
+    <div class="viz-grid" id="ai-analyzer">
+      <div class="viz-card" data-aos>
+        <h3 class="viz-title">Sentiment Distribution</h3>
+        <div class="vz-row">
+          <span class="vz-lbl">Positive</span>
+          <div class="vz-track"><div class="vz-fill vzf-pos" id="vz-pos"></div></div>
+          <span class="vz-pct" id="vp-pos">0%</span>
+        </div>
+        <div class="vz-row">
+          <span class="vz-lbl">Negative</span>
+          <div class="vz-track"><div class="vz-fill vzf-neg" id="vz-neg"></div></div>
+          <span class="vz-pct" id="vp-neg">0%</span>
+        </div>
+        <div class="vz-row">
+          <span class="vz-lbl">Confidence</span>
+          <div class="vz-track"><div class="vz-fill vzf-conf" id="vz-conf"></div></div>
+          <span class="vz-pct" id="vp-conf">–</span>
+        </div>
+      </div>
+
+      <div class="viz-card donut-card" data-aos>
+        <h3 class="viz-title">Avg Confidence</h3>
+        <div class="donut-wrap">
+          <svg viewBox="0 0 120 120" class="donut-svg">
+            <circle class="donut-bg" cx="60" cy="60" r="48"/>
+            <circle class="donut-ring" id="donut-ring" cx="60" cy="60" r="48"
+              stroke-dasharray="0 301.6" stroke-dashoffset="75.4"/>
+          </svg>
+          <div class="donut-center">
+            <div class="donut-pct" id="donut-val">0%</div>
+            <div class="donut-sub">BERT Score</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="viz-card history-card" data-aos>
+        <h3 class="viz-title">Live Analysis Feed</h3>
+        <div class="feed-list" id="feed-list">
+          <div class="feed-empty">
+            <div class="feed-empty-icon">🤖</div>
+            <div>Submit a review to see live analysis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     PRODUCTS
+══════════════════════════════════════════════════════ -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="section-badge">Product Center</div>
+    <h2 class="section-title">AI-Analyzed Product Library</h2>
+    <p class="section-sub">Submit reviews and get instant BERT sentiment analysis results.</p>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">
+        <span class="fb-dot all-dot"></span> All Reviews
+      </button>
+      <button class="filter-btn" data-filter="positive">
+        <span class="fb-dot pos-dot"></span> Positive
+      </button>
+      <button class="filter-btn" data-filter="negative">
+        <span class="fb-dot neg-dot"></span> Negative
+      </button>
+      <div class="filter-pill-track">
+        <div class="filter-pill" id="filter-pill"></div>
+      </div>
+    </div>
+
+    <div class="products-grid" id="products-grid"></div>
+    <div class="pagination-wrap" id="pagination"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-glow"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+            <path d="M14 2L26 8V20L14 26L2 20V8L14 2Z" stroke="#ff9900" stroke-width="1.5" fill="none"/>
+            <circle cx="14" cy="14" r="3" fill="#ff9900"/>
+          </svg>
+          Sentiment<span style="color:#ff9900">IQ</span>
+        </div>
+        <p class="footer-desc">AI-powered review intelligence platform using BERT deep learning for real-time sentiment analysis at e-commerce scale.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">🤖 BERT</span>
+          <span class="tech-tag">⚡ FastAPI</span>
+          <span class="tech-tag">🐍 Python</span>
+          <span class="tech-tag">🟨 JavaScript</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="fc-title">Platform</div>
+        <a href="#home">Home</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#products">Products</a>
+        <a href="#ai-analyzer">AI Analyzer</a>
+      </div>
+     
+     
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SentimentIQ — Built with BERT</span>
+      <div class="fb-dots">
+        <div class="fb-dot-anim"></div>
+        <span>BERT Model Active</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
