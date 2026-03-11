@@ -617,7 +617,7 @@ async function doCreateUser() {
 function applyTheme() {
     document.body.classList.toggle('dark-mode', isDark);
     document.getElementById('themeBtn').innerHTML =
-        isDark ? '<i class="fa-solid fa-sun"></i> Theme' : '<i class="fa-solid fa-moon"></i> Theme';
+        isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
 }
 document.getElementById('themeBtn').addEventListener('click', () => {
     isDark = !isDark;
