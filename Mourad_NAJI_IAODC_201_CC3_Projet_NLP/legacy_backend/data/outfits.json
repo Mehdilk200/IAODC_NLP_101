@@ -1,0 +1,37 @@
+{
+    "outfits": [
+      {
+        "style": "formal",
+        "weather": ["any"],
+        "items": {
+          "top": "Chemise blanche + blazer",
+          "bottom": "Pantalon noir",
+          "shoes": "Derbies noirs",
+          "accessories": "Montre بسيطة"
+        },
+        "why": "ستايل رسمي مناسب للمناسبات والخدمة الرسمية."
+      },
+      {
+        "style": "smart",
+        "weather": ["normal", "cold"],
+        "items": {
+          "top": "Pull خفيف أو chemise",
+          "bottom": "Chino beige",
+          "shoes": "Baskets بيض نظاف",
+          "accessories": "Ceinture بني"
+        },
+        "why": "Smart casual مناسب للستاج والخدمة."
+      },
+      {
+        "style": "street",
+        "weather": ["cold", "normal"],
+        "items": {
+          "top": "Hoodie رمادي",
+          "bottom": "Jean أزرق",
+          "shoes": "Sneakers",
+          "accessories": "Casquette اختيارية"
+        },
+        "why": "Street style مريح و trendy."
+      }
+    ]
+  }

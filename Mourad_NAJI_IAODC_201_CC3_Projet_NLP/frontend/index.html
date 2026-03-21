@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleAI — Venture-Grade Stylist</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">✦</span>
+        <h1>StyleAI</h1>
+      </div>
+      <nav class="history-nav">
+        <div class="nav-label">CONVERSATIONS</div>
+        <div class="history-item active">
+          <span class="dot"></span> Current Style Session
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="status-badge">
+          <span class="pulse"></span> System Ready
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-viewport">
+      <!-- Dynamic Messages -->
+      <div id="messagesList" class="messages-list">
+        <div class="welcome-hero">
+          <div class="hero-icon">✦</div>
+          <h1>Your Personal AI Stylist</h1>
+          <p>Powered by Semantic Search & Probabilistic Ranking.</p>
+          <div class="hero-chips">
+            <button class="chip" data-query="Formal winter wedding outfit, budget 800dh">❄️ Winter Wedding</button>
+            <button class="chip" data-query="Casual streetwear look for summer, men">☀️ Summer Streetwear</button>
+            <button class="chip" data-query="Elegant date night look, black or red">💋 Date Night</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Anchor -->
+      <div class="input-container">
+        <div class="input-glass">
+          <textarea id="msgInput" placeholder="Describe your dream outfit..." rows="1"></textarea>
+          <button id="sendBtn" class="send-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="disclaimer">StyleAI understands English, French, and Arabic preferences.</p>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

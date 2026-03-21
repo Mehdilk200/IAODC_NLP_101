@@ -1,0 +1,904 @@
+{
+  "outfits": [
+    {
+      "id": "outfit_001",
+      "style": "formal",
+      "season": ["winter", "fall"],
+      "occasion": ["wedding", "gala", "ceremony"],
+      "gender": "men",
+      "color_palette": ["navy", "white", "black"],
+      "estimated_price": 750,
+      "description": "Classic navy double-breasted suit with a crisp white dress shirt and black oxford shoes. Ideal for winter weddings and formal galas. Timeless, elegant, and authoritative.",
+      "items": {
+        "top": "Navy double-breasted blazer + white dress shirt",
+        "bottom": "Matching navy trousers",
+        "shoes": "Black Oxford shoes",
+        "accessories": "Navy pocket square, silver cufflinks, black leather belt"
+      },
+      "tags": ["classic", "elegant", "timeless", "formal", "wedding"],
+      "why": "The navy double-breasted suit is the gold standard for formal winter occasions. It conveys authority and elegance while being seasonally appropriate."
+    },
+    {
+      "id": "outfit_002",
+      "style": "formal",
+      "season": ["summer", "spring"],
+      "occasion": ["wedding", "garden-party", "ceremony"],
+      "gender": "men",
+      "color_palette": ["beige", "white", "light-brown"],
+      "estimated_price": 680,
+      "description": "Light beige linen suit with a white dress shirt and tan loafers. Perfect for outdoor summer weddings and garden parties. Breathable, sophisticated, and season-perfect.",
+      "items": {
+        "top": "Beige linen blazer + white linen shirt",
+        "bottom": "Matching beige linen trousers",
+        "shoes": "Tan suede loafers",
+        "accessories": "Light brown belt, white pocket square"
+      },
+      "tags": ["summer", "linen", "outdoor", "wedding", "breathable"],
+      "why": "Linen is the perfect summer formal fabric — breathable and elegant. Beige keeps things light and seasonally appropriate for outdoor events."
+    },
+    {
+      "id": "outfit_003",
+      "style": "smart",
+      "season": ["winter", "fall"],
+      "occasion": ["work", "office", "meeting", "interview"],
+      "gender": "men",
+      "color_palette": ["grey", "white", "black"],
+      "estimated_price": 420,
+      "description": "Charcoal grey slim-fit trousers with a light grey turtleneck sweater and clean white sneakers. Smart casual for the modern office or important meeting.",
+      "items": {
+        "top": "Light grey turtleneck sweater",
+        "bottom": "Charcoal slim-fit chinos",
+        "shoes": "White leather sneakers",
+        "accessories": "Minimalist silver watch"
+      },
+      "tags": ["smart-casual", "office", "modern", "minimalist", "winter"],
+      "why": "The turtleneck-chino combo is the modern professional's secret weapon — polished without being stuffy. Perfect for creative offices and tech meetings."
+    },
+    {
+      "id": "outfit_004",
+      "style": "smart",
+      "season": ["spring", "summer"],
+      "occasion": ["work", "office", "casual-meeting"],
+      "gender": "men",
+      "color_palette": ["beige", "navy", "white"],
+      "estimated_price": 380,
+      "description": "Beige chino trousers paired with a navy short-sleeve linen shirt and white leather sneakers. A fresh, smart-casual look for warm-weather office days.",
+      "items": {
+        "top": "Navy linen short-sleeve shirt",
+        "bottom": "Beige slim chinos",
+        "shoes": "White canvas sneakers",
+        "accessories": "Woven leather belt, minimalist watch"
+      },
+      "tags": ["smart-casual", "summer", "office", "linen", "relaxed"],
+      "why": "Linen shirts keep you cool while maintaining a professional image. The navy-beige palette is classically confident without being formal."
+    },
+    {
+      "id": "outfit_005",
+      "style": "streetwear",
+      "season": ["winter", "fall"],
+      "occasion": ["casual", "weekend", "hangout"],
+      "gender": "men",
+      "color_palette": ["grey", "black", "white"],
+      "estimated_price": 350,
+      "description": "Oversized grey hoodie layered under a black puffer jacket with dark-wash straight jeans and classic white Nike Air Force 1. Ultimate streetwear comfort meets style.",
+      "items": {
+        "top": "Oversized grey hoodie + black puffer jacket",
+        "bottom": "Dark-wash straight jeans",
+        "shoes": "White Nike Air Force 1",
+        "accessories": "Black beanie, black crossbody bag"
+      },
+      "tags": ["streetwear", "casual", "oversized", "urban", "layered", "winter"],
+      "why": "The hoodie-puffer layer is the streetwear staple for cold days. It's effortlessly cool and works perfectly for urban hangouts and weekend errands."
+    },
+    {
+      "id": "outfit_006",
+      "style": "streetwear",
+      "season": ["spring", "summer"],
+      "occasion": ["casual", "weekend", "hangout"],
+      "gender": "men",
+      "color_palette": ["white", "black", "beige"],
+      "estimated_price": 280,
+      "description": "White oversized graphic tee, beige cargo shorts, and black Nike Dunks. The perfect summer street style look — relaxed, trendy, and effortless.",
+      "items": {
+        "top": "White oversized graphic tee",
+        "bottom": "Beige cargo shorts",
+        "shoes": "Black Nike Dunks",
+        "accessories": "Black cap, silver chain"
+      },
+      "tags": ["streetwear", "summer", "casual", "graphic-tee", "relaxed"],
+      "why": "The graphic tee is the cornerstone of summer streetwear. Cargo shorts add utility while Dunks keep everything grounded and stylish."
+    },
+    {
+      "id": "outfit_007",
+      "style": "traditional",
+      "season": ["winter", "fall"],
+      "occasion": ["wedding", "eid", "ceremony", "family"],
+      "gender": "men",
+      "color_palette": ["navy", "gold", "brown"],
+      "estimated_price": 900,
+      "description": "Premium navy wool jabador with gold embroidery and brown leather babouches. Traditional Moroccan formal wear for weddings, Eid, and family ceremonies.",
+      "items": {
+        "top": "Navy wool jabador top with gold embroidery",
+        "bottom": "Matching navy jabador trousers",
+        "shoes": "Brown leather babouches",
+        "accessories": "Traditional leather belt (meddiya)"
+      },
+      "tags": ["traditional", "moroccan", "jabador", "wedding", "eid", "navy", "gold"],
+      "why": "The jabador is Morocco's most prestigious traditional garment. Navy with gold embroidery signals elegance and respect at formal family events."
+    },
+    {
+      "id": "outfit_008",
+      "style": "traditional",
+      "season": ["summer", "spring"],
+      "occasion": ["eid", "family", "ceremony"],
+      "gender": "men",
+      "color_palette": ["white", "beige", "gold"],
+      "estimated_price": 600,
+      "description": "Flowing white cotton djellaba with subtle gold trim and white leather babouches. A breathable, elegant traditional look perfect for summer Eid celebrations.",
+      "items": {
+        "top": "White cotton djellaba with gold collar embroidery",
+        "bottom": "Matching djellaba (full-length)",
+        "shoes": "White leather babouches",
+        "accessories": "Tasbih (prayer beads) optional"
+      },
+      "tags": ["traditional", "djellaba", "eid", "summer", "white", "moroccan"],
+      "why": "White djellaba is the symbol of purity and celebration on Eid. Light cotton keeps you cool during summer festivities."
+    },
+    {
+      "id": "outfit_009",
+      "style": "formal",
+      "season": ["winter", "fall"],
+      "occasion": ["gala", "dinner", "ceremony", "party"],
+      "gender": "men",
+      "color_palette": ["black", "white"],
+      "estimated_price": 850,
+      "description": "Sharp black tuxedo with a crisp white dress shirt, black bow tie, and patent leather oxford shoes. Classic black-tie formal wear for galas and formal dinners.",
+      "items": {
+        "top": "Black slim-fit tuxedo jacket + white pleated dress shirt",
+        "bottom": "Black tuxedo trousers with satin stripe",
+        "shoes": "Black patent leather oxfords",
+        "accessories": "Black bow tie, white pocket square, cufflinks"
+      },
+      "tags": ["black-tie", "tuxedo", "formal", "gala", "dinner", "classic"],
+      "why": "Nothing commands a room like a well-fitted black tuxedo. It is the ultimate formal look for galas, award ceremonies, and black-tie dinners."
+    },
+    {
+      "id": "outfit_010",
+      "style": "smart",
+      "season": ["fall", "winter"],
+      "occasion": ["dinner", "date", "casual-event"],
+      "gender": "men",
+      "color_palette": ["burgundy", "grey", "black"],
+      "estimated_price": 460,
+      "description": "Slim-fit burgundy wool blazer over a dark grey crew-neck, black slim trousers, and clean Chelsea boots. The perfect smart-casual look for dinners and evening events.",
+      "items": {
+        "top": "Burgundy slim-fit wool blazer + dark grey crew-neck",
+        "bottom": "Black slim-fit trousers",
+        "shoes": "Black Chelsea boots",
+        "accessories": "Minimalist black watch, no tie"
+      },
+      "tags": ["smart-casual", "dinner", "date-night", "blazer", "burgundy", "evening"],
+      "why": "The blazer-over-crewneck formula is the modern man's dinner look. Burgundy adds warmth and sophistication perfect for fall evenings."
+    },
+    {
+      "id": "outfit_011",
+      "style": "streetwear",
+      "season": ["winter", "fall"],
+      "occasion": ["casual", "concert", "hangout"],
+      "gender": "men",
+      "color_palette": ["black", "grey", "white"],
+      "estimated_price": 420,
+      "description": "Black bomber jacket over a white long-sleeve shirt, grey jogger pants, and black high-top sneakers. A slick, all-black-toned street look for concerts and night outings.",
+      "items": {
+        "top": "Black bomber jacket + white long-sleeve shirt",
+        "bottom": "Dark grey slim joggers",
+        "shoes": "Black high-top Nike or Adidas",
+        "accessories": "Silver chain, black cap optional"
+      },
+      "tags": ["streetwear", "bomber", "concert", "night-out", "urban", "dark-tone"],
+      "why": "The bomber jacket is the go-to layer for urban nights. Black-grey tones create a cohesive, effortlessly cool aesthetic."
+    },
+    {
+      "id": "outfit_012",
+      "style": "formal",
+      "season": ["spring", "summer"],
+      "occasion": ["work", "office", "meeting", "interview"],
+      "gender": "men",
+      "color_palette": ["light-blue", "white", "grey"],
+      "estimated_price": 500,
+      "description": "Light blue slim-fit suit with a white dress shirt (no tie) and white low-top sneakers or loafers. A fresh, modern take on business formal for spring offices.",
+      "items": {
+        "top": "Light blue slim blazer + white dress shirt (open collar)",
+        "bottom": "Matching light blue slim trousers",
+        "shoes": "White leather loafers",
+        "accessories": "Minimalist watch, no tie"
+      },
+      "tags": ["modern-formal", "business", "spring", "light-blue", "no-tie"],
+      "why": "Light blue suits are the modern executive's power move. The open-collar no-tie approach signals confident authority in creative or tech-forward companies."
+    },
+    {
+      "id": "outfit_013",
+      "style": "smart",
+      "season": ["winter"],
+      "occasion": ["work", "office", "meeting"],
+      "gender": "men",
+      "color_palette": ["camel", "white", "black"],
+      "estimated_price": 520,
+      "description": "Camel overcoat over a white slim-fit dress shirt, black slim trousers, and black Chelsea boots. A powerful, sophisticated winter office look that turns heads.",
+      "items": {
+        "top": "Camel wool overcoat + white slim dress shirt",
+        "bottom": "Black slim-fit trousers",
+        "shoes": "Black Chelsea boots",
+        "accessories": "Black leather gloves, minimalist silver watch"
+      },
+      "tags": ["overcoat", "camel", "winter", "office", "sophisticated", "smart"],
+      "why": "A camel overcoat is the single most powerful cold-weather investment. Worn over smart basics it creates an effortlessly executive silhouette."
+    },
+    {
+      "id": "outfit_014",
+      "style": "streetwear",
+      "season": ["spring", "summer"],
+      "occasion": ["casual", "sport", "weekend"],
+      "gender": "men",
+      "color_palette": ["white", "green", "grey"],
+      "estimated_price": 240,
+      "description": "Sage green athletic shorts with a white oversized tee and green-white New Balance 550. Clean, sporty summer vibes perfect for casual outings and light exercise.",
+      "items": {
+        "top": "White oversized tee",
+        "bottom": "Sage green athletic shorts",
+        "shoes": "Green/white New Balance 550",
+        "accessories": "White cap, green socks"
+      },
+      "tags": ["sporty", "summer", "casual", "athleisure", "green", "relaxed"],
+      "why": "The athleisure aesthetic merges comfort with style. Sage green is an on-trend neutral that pairs beautifully with white for a fresh summer look."
+    },
+    {
+      "id": "outfit_015",
+      "style": "formal",
+      "season": ["winter", "fall"],
+      "occasion": ["wedding", "gala"],
+      "gender": "men",
+      "color_palette": ["charcoal", "white", "burgundy"],
+      "estimated_price": 780,
+      "description": "Charcoal grey three-piece suit with a white shirt, burgundy tie, and black cap-toe oxfords. A refined, three-dimensional formal look for autumn and winter weddings.",
+      "items": {
+        "top": "Charcoal grey three-piece suit (waistcoat + blazer) + white shirt",
+        "bottom": "Matching charcoal slim trousers",
+        "shoes": "Black cap-toe oxfords",
+        "accessories": "Burgundy silk tie, charcoal pocket square, silver tie bar"
+      },
+      "tags": ["three-piece", "charcoal", "wedding", "formal", "waistcoat", "winter"],
+      "why": "The three-piece suit adds structure and distinction to formal events. The burgundy tie accent warms the charcoal palette beautifully for fall/winter."
+    },
+    {
+      "id": "outfit_016",
+      "style": "streetwear",
+      "season": ["winter", "fall"],
+      "occasion": ["casual", "hangout"],
+      "gender": "men",
+      "color_palette": ["black", "brown", "beige"],
+      "estimated_price": 390,
+      "description": "Brown shearling jacket over a black mock-neck sweater, beige wide-leg trousers, and brown leather boots. Warm, trendy, and fashion-forward street style.",
+      "items": {
+        "top": "Brown shearling jacket + black mock-neck",
+        "bottom": "Beige wide-leg trousers",
+        "shoes": "Brown suede Chelsea boots",
+        "accessories": "Brown leather crossbody bag"
+      },
+      "tags": ["shearling", "fall", "wide-leg", "trendy", "brown", "streetwear"],
+      "why": "Shearling jackets are having a major moment. The wide-leg trouser balances the volume of the jacket for a deliberately editorial street look."
+    },
+    {
+      "id": "outfit_017",
+      "style": "formal",
+      "season": ["any"],
+      "occasion": ["interview", "work", "meeting"],
+      "gender": "men",
+      "color_palette": ["navy", "light-blue", "black"],
+      "estimated_price": 550,
+      "description": "Navy slim blazer with a light blue dress shirt, dark grey slim trousers, and black derby shoes. The classic business-professional interview formula that projects confidence.",
+      "items": {
+        "top": "Navy slim-fit blazer + light blue dress shirt",
+        "bottom": "Dark grey slim-fit dress trousers",
+        "shoes": "Black leather derby shoes",
+        "accessories": "Navy/light-blue striped tie, leather belt"
+      },
+      "tags": ["business", "interview", "professional", "navy", "formal", "confident"],
+      "why": "Navy blazer + light blue shirt is statistically the most trusted combination in professional settings. It signals competence and attention to detail."
+    },
+    {
+      "id": "outfit_018",
+      "style": "smart",
+      "season": ["spring"],
+      "occasion": ["date", "casual-event", "dinner"],
+      "gender": "men",
+      "color_palette": ["light-blue", "white", "beige"],
+      "estimated_price": 300,
+      "description": "Light blue Oxford shirt tucked into beige chinos with white leather sneakers. The quintessential smart-casual spring date look — clean, approachable, and effortlessly stylish.",
+      "items": {
+        "top": "Light blue Oxford shirt (slightly tucked)",
+        "bottom": "Beige slim chinos",
+        "shoes": "White leather sneakers",
+        "accessories": "Braided belt, minimalist watch"
+      },
+      "tags": ["spring", "date", "oxford-shirt", "casual", "smart", "fresh"],
+      "why": "Light blue + beige is the spring color formula. An Oxford shirt half-tuck hits the perfect balance of put-together without looking stiff."
+    },
+    {
+      "id": "outfit_019",
+      "style": "traditional",
+      "season": ["winter"],
+      "occasion": ["family", "ceremony", "casual-traditional"],
+      "gender": "men",
+      "color_palette": ["grey", "silver", "white"],
+      "estimated_price": 500,
+      "description": "Grey wool beldi shirt (qmija) with matching grey saroual pants, a beige burnous for layering, and traditional yellow slippers (belgha). Warm, Moroccan traditional casual.",
+      "items": {
+        "top": "Grey wool beldi qmija",
+        "bottom": "Matching grey saroual",
+        "shoes": "Yellow leather belgha slippers",
+        "accessories": "Beige burnous (optional wrap for warmth)"
+      },
+      "tags": ["traditional", "beldi", "moroccan", "winter", "grey", "casual-traditional"],
+      "why": "The beldi shirt and saroual combination is quintessentially Moroccan. A burnous adds warmth and authenticity for winter family gatherings."
+    },
+    {
+      "id": "outfit_020",
+      "style": "streetwear",
+      "season": ["fall"],
+      "occasion": ["casual", "hangout", "weekend"],
+      "gender": "men",
+      "color_palette": ["olive", "black", "white"],
+      "estimated_price": 310,
+      "description": "Olive green utility jacket over a black slim tee, straight black denim jeans, and white leather New Balance sneakers. A raw, minimal fall street look.",
+      "items": {
+        "top": "Olive utility/field jacket + black slim tee",
+        "bottom": "Black straight-leg jeans",
+        "shoes": "White leather New Balance 550 or 574",
+        "accessories": "Minimalist watch, digital bag optional"
+      },
+      "tags": ["utility", "olive", "fall", "streetwear", "minimal", "monochrome"],
+      "why": "The utility jacket adds structure and purpose to any street look. Olive with black and white is a foolproof fall color combo."
+    },
+    {
+      "id": "outfit_021",
+      "style": "formal",
+      "season": ["any"],
+      "occasion": ["wedding", "gala"],
+      "gender": "women",
+      "color_palette": ["emerald", "gold"],
+      "estimated_price": 900,
+      "description": "Emerald green satin floor-length gown with gold accessories and nude heels. A statement look for formal events and weddings. Dramatic, confident, and utterly elegant.",
+      "items": {
+        "top": "Emerald satin gown (one-shoulder or strapless)",
+        "bottom": "Floor-length fitted skirt",
+        "shoes": "Nude or gold strappy heels",
+        "accessories": "Gold drop earrings, clutch bag"
+      },
+      "tags": ["gown", "formal", "wedding", "emerald", "gold", "statement", "elegant"],
+      "why": "Emerald green is the most flattering jewel tone across all skin tones. The satin fabric catches light beautifully at evening formal events."
+    },
+    {
+      "id": "outfit_022",
+      "style": "smart",
+      "season": ["spring", "summer"],
+      "occasion": ["work", "office", "meeting"],
+      "gender": "women",
+      "color_palette": ["white", "black", "nude"],
+      "estimated_price": 380,
+      "description": "Crisp white blazer over a black fitted cami with high-waist wide-leg trousers and nude heels. The power-feminine office look — polished and commanding.",
+      "items": {
+        "top": "White structured blazer + black cami underneath",
+        "bottom": "Black high-waist wide-leg trousers",
+        "shoes": "Nude pointed-toe pumps",
+        "accessories": "Gold hoop earrings, leather handbag"
+      },
+      "tags": ["power-dressing", "office", "women", "blazer", "professional", "chic"],
+      "why": "White blazer over black is the female executive powerhouse combo. Wide-leg trousers elongate the silhouette for maximum authority in any boardroom."
+    },
+    {
+      "id": "outfit_023",
+      "style": "streetwear",
+      "season": ["spring", "summer"],
+      "occasion": ["casual", "weekend"],
+      "gender": "women",
+      "color_palette": ["lavender", "white"],
+      "estimated_price": 200,
+      "description": "Lavender oversized crop hoodie, high-waist white straight jeans, and white Adidas Gazelles. A soft, feminine take on streetwear for spring weekends.",
+      "items": {
+        "top": "Lavender oversized crop hoodie",
+        "bottom": "High-waist white straight-leg jeans",
+        "shoes": "White Adidas Gazelle sneakers",
+        "accessories": "Pearl studs, small crossbody bag"
+      },
+      "tags": ["streetwear", "female", "lavender", "pastel", "spring", "casual"],
+      "why": "Pastel streetwear is the softer alternative to high-contrast urban looks. Lavender-white is a clean, on-trend spring palette."
+    },
+    {
+      "id": "outfit_024",
+      "style": "formal",
+      "season": ["winter", "fall"],
+      "occasion": ["work", "office", "meeting"],
+      "gender": "women",
+      "color_palette": ["charcoal", "white", "black"],
+      "estimated_price": 620,
+      "description": "Charcoal grey wool pencil skirt suit (matching blazer) with a white silk blouse and black pointed heels. Serious authority for important meetings and executive settings.",
+      "items": {
+        "top": "Charcoal matching blazer + white silk blouse",
+        "bottom": "Charcoal knee-length pencil skirt",
+        "shoes": "Black pointed stiletto heels",
+        "accessories": "Pearl earrings, structured leather tote"
+      },
+      "tags": ["power-suit", "formal", "executive", "women", "charcoal", "winter"],
+      "why": "The matching skirt suit is the female equivalent of a men's power suit. Charcoal grey communicates seriousness and competence in any C-suite environment."
+    },
+    {
+      "id": "outfit_025",
+      "style": "smart",
+      "season": ["fall", "winter"],
+      "occasion": ["date", "dinner", "evening"],
+      "gender": "women",
+      "color_palette": ["burgundy", "black"],
+      "estimated_price": 340,
+      "description": "Burgundy satin slip dress layered under a fitted black blazer, with black ankle boots and minimal gold jewellery. An effortlessly chic evening outfit.",
+      "items": {
+        "top": "Burgundy satin slip dress + black blazer over",
+        "bottom": "Dress hem falls mid-thigh",
+        "shoes": "Black leather ankle boots",
+        "accessories": "Thin gold necklace, small gold earrings"
+      },
+      "tags": ["date-night", "evening", "burgundy", "satin", "chic", "women"],
+      "why": "Layering a blazer over a slip dress is the smartest evening formula — dressed up or down depending on venue. Burgundy-black is inescapably sophisticated."
+    },
+    {
+      "id": "outfit_026",
+      "style": "streetwear",
+      "season": ["winter"],
+      "occasion": ["casual", "weekend", "hangout"],
+      "gender": "women",
+      "color_palette": ["camel", "white", "black"],
+      "estimated_price": 360,
+      "description": "Camel oversized coat, white turtleneck, black high-waist wide-leg jeans, and white sneakers. Clean winter street style with a luxury editorial aesthetic.",
+      "items": {
+        "top": "Camel oversized longline coat + white turtleneck",
+        "bottom": "Black high-waist wide-leg jeans",
+        "shoes": "White platform sneakers",
+        "accessories": "Black structured bag, gold chain"
+      },
+      "tags": ["camel-coat", "winter", "female", "editorial", "streetwear", "layered"],
+      "why": "An oversized camel coat over a white turtleneck is a Pinterest-favourite winter look. The black jeans anchor the outfit and prevent it from looking shapeless."
+    },
+    {
+      "id": "outfit_027",
+      "style": "traditional",
+      "season": ["summer", "spring"],
+      "occasion": ["wedding", "eid", "ceremony"],
+      "gender": "women",
+      "color_palette": ["rose-gold", "pink", "gold"],
+      "estimated_price": 1200,
+      "description": "Rose-gold embroidered Moroccan takchita (two-piece kaftan) with gold heels and ornate gold jewellery. The ultimate festive traditional look for weddings and Eid.",
+      "items": {
+        "top": "Embroidered rose-gold inner kaftan + lace outer piece",
+        "bottom": "Full-length kaftan silhouette",
+        "shoes": "Gold strappy heels",
+        "accessories": "Gold headpiece (taj), gold necklace, bangles"
+      },
+      "tags": ["takchita", "kaftan", "moroccan", "wedding", "eid", "traditional", "women"],
+      "why": "The takchita is Morocco's most celebrated bridal and festive garment. Rose-gold embroidery catches light magnificently at candle-lit wedding receptions."
+    },
+    {
+      "id": "outfit_028",
+      "style": "formal",
+      "season": ["spring", "summer"],
+      "occasion": ["wedding", "garden-party"],
+      "gender": "women",
+      "color_palette": ["dusty-rose", "blush", "gold"],
+      "estimated_price": 550,
+      "description": "Dusty rose A-line midi dress with delicate gold jewellery and nude strappy heels. A romantic, feminine wedding guest look for spring and summer celebrations.",
+      "items": {
+        "top": "Dusty rose chiffon bodice with ruched detail",
+        "bottom": "A-line midi skirt",
+        "shoes": "Nude strappy heeled sandals",
+        "accessories": "Delicate gold necklace, small gold earrings, clutch"
+      },
+      "tags": ["wedding-guest", "midi-dress", "spring", "romantic", "women", "blush"],
+      "why": "A midi A-line dress in a dusty rose hits the sweet spot between formal and girly. It's the most universally flattering wedding guest silhouette."
+    },
+    {
+      "id": "outfit_029",
+      "style": "smart",
+      "season": ["any"],
+      "occasion": ["work", "casual-smart", "meeting"],
+      "gender": "women",
+      "color_palette": ["navy", "white"],
+      "estimated_price": 290,
+      "description": "Navy tailored straight-leg trousers with a crisp white cotton shirt (tucked in) and white leather sneakers. A clean, minimalist smart-casual formula that works 365 days.",
+      "items": {
+        "top": "White fitted cotton shirt, tucked in",
+        "bottom": "Navy tailored straight-leg trousers",
+        "shoes": "White leather sneakers",
+        "accessories": "Gold thin belt (optional), small leather bag"
+      },
+      "tags": ["minimalist", "smart", "office", "women", "navy-white", "clean"],
+      "why": "Navy trousers + white shirt is the wardrobe essential that transcends seasons. Adding white sneakers brings it into modern smart-casual territory."
+    },
+    {
+      "id": "outfit_030",
+      "style": "streetwear",
+      "season": ["summer"],
+      "occasion": ["casual", "weekend", "beach"],
+      "gender": "women",
+      "color_palette": ["white", "tan", "gold"],
+      "estimated_price": 180,
+      "description": "White linen co-ord (wide-leg pants + crop shirt) with tan leather sandals and gold jewellery. Relaxed, bohemian summer vibes for day trips and beach resort wear.",
+      "items": {
+        "top": "White linen crop top",
+        "bottom": "White linen wide-leg pants",
+        "shoes": "Tan leather flat sandals",
+        "accessories": "Gold bangles, woven straw bag, gold earrings"
+      },
+      "tags": ["linen", "co-ord", "summer", "beach", "bohemian", "white"],
+      "why": "Linen co-ords are the ultimate summer look: coordinated without trying, breathable, and instantly travel-ready. White-tan is a classic Mediterranean palette."
+    },
+    {
+      "id": "outfit_031",
+      "style": "formal",
+      "season": ["winter"],
+      "occasion": ["party", "new-year", "gala"],
+      "gender": "men",
+      "color_palette": ["black", "silver"],
+      "estimated_price": 700,
+      "description": "Black velvet slim blazer over a black dress shirt, black slim trousers, and black pointed Chelsea boots. A modern, ultra-sleek party look for New Year and premium events.",
+      "items": {
+        "top": "Black velvet blazer + black slim dress shirt",
+        "bottom": "Black slim dress trousers",
+        "shoes": "Black pointed leather Chelsea boots",
+        "accessories": "Silver chain, silver cufflinks, no tie"
+      },
+      "tags": ["party", "velvet", "black", "new-year", "sleek", "formal", "men"],
+      "why": "The all-black velvet blazer look is the modern man's party signature. It's formal enough for black-tie adjacent events but has the edge of a fashion-forward."
+    },
+    {
+      "id": "outfit_032",
+      "style": "smart",
+      "season": ["spring", "fall"],
+      "occasion": ["casual", "hangout", "brunch"],
+      "gender": "men",
+      "color_palette": ["olive", "white", "beige"],
+      "estimated_price": 260,
+      "description": "Olive green harrington jacket over a white tee, beige straight chinos, and white or cream sneakers. Relaxed, vintage-inspired smart casual for brunch and city weekends.",
+      "items": {
+        "top": "Olive harrington jacket + white tee",
+        "bottom": "Beige straight-leg chinos",
+        "shoes": "Cream New Balance or Vans Old Skool",
+        "accessories": "Minimal watch"
+      },
+      "tags": ["harrington", "olive", "vintage", "smart-casual", "brunch", "men"],
+      "why": "The harrington jacket is the most versatile transitional layer. Olive green over white and beige is one of the cleanest, most wearable palettes for spring."
+    },
+    {
+      "id": "outfit_033",
+      "style": "streetwear",
+      "season": ["fall", "winter"],
+      "occasion": ["casual", "concert", "hangout"],
+      "gender": "men",
+      "color_palette": ["brown", "tan", "cream"],
+      "estimated_price": 330,
+      "description": "Tan Carhartt WIP work jacket, cream rib-knit sweater, dark slim jeans, and brown suede Timberland boots. Workwear-meets-streetwear — rugged cool for fall outings.",
+      "items": {
+        "top": "Tan Carhartt work jacket + cream rib-knit sweater",
+        "bottom": "Dark indigo slim jeans",
+        "shoes": "Brown suede Timberland 6-inch boots",
+        "accessories": "Beige ribbed beanie"
+      },
+      "tags": ["workwear", "carhartt", "fall", "streetwear", "tan", "rugged"],
+      "why": "Workwear aesthetic — Carhartt, Timberlands, earth tones — has become one of streetwear's most durable subculture movements. Brown-tan-cream is autumn in a palette."
+    },
+    {
+      "id": "outfit_034",
+      "style": "formal",
+      "season": ["spring"],
+      "occasion": ["wedding", "ceremony"],
+      "gender": "women",
+      "color_palette": ["sage-green", "gold", "nude"],
+      "estimated_price": 480,
+      "description": "Sage green floor-length chiffon dress with a flowy silhouette, gold accessories, and nude heels. Sophisticated, romantic, and perfectly appropriate for spring weddings.",
+      "items": {
+        "top": "Sage green chiffon bodice with thin straps",
+        "bottom": "Flowing full-length chiffon skirt",
+        "shoes": "Nude block-heel sandals",
+        "accessories": "Gold leaf earrings, delicate gold bracelet"
+      },
+      "tags": ["spring", "chiffon", "wedding-guest", "women", "sage-green", "romantic"],
+      "why": "Sage green is Spring 2025's breakout color for formal events. The chiffon silhouette is graceful and moves beautifully, perfect for outdoor ceremony settings."
+    },
+    {
+      "id": "outfit_035",
+      "style": "smart",
+      "season": ["fall"],
+      "occasion": ["casual", "brunch", "shopping"],
+      "gender": "women",
+      "color_palette": ["rust", "brown", "white"],
+      "estimated_price": 240,
+      "description": "Rust orange knit sweater tucked into brown high-waist straight jeans with tan ankle boots. A cozy, fashion-forward fall outfit radiating autumnal warmth.",
+      "items": {
+        "top": "Rust orange ribbed knit sweater (slightly cropped)",
+        "bottom": "Brown high-waist straight-leg jeans",
+        "shoes": "Tan suede ankle boots",
+        "accessories": "Gold hoops, small shoulder bag"
+      },
+      "tags": ["fall", "rust", "knit", "women", "autumnal", "cozy", "smart-casual"],
+      "why": "Rust and brown are the defining fall colour pairing. A ribbed knit sweater half-tuck into straight jeans is the seasonal smart-casual formula."
+    },
+    {
+      "id": "outfit_036",
+      "style": "streetwear",
+      "season": ["spring"],
+      "occasion": ["casual", "outdoor"],
+      "gender": "men",
+      "color_palette": ["green", "white", "grey"],
+      "estimated_price": 220,
+      "description": "Forest green zip-up track jacket, light grey sweatpants, and green Adidas Campus or Samba sneakers. Clean athletic-street hybrid look for spring days.",
+      "items": {
+        "top": "Forest green zip-up track jacket",
+        "bottom": "Light grey fitted sweatpants",
+        "shoes": "Green/white Adidas Samba or Campus",
+        "accessories": "Minimal — no accessories needed"
+      },
+      "tags": ["tracksuit", "spring", "athletic", "green", "streetwear", "adidas", "clean"],
+      "why": "The track jacket resurgence is real. Green-grey-white is a cohesive athletic palette that works perfectly as the weather warms up."
+    },
+    {
+      "id": "outfit_037",
+      "style": "formal",
+      "season": ["any"],
+      "occasion": ["work", "interview", "presentation"],
+      "gender": "women",
+      "color_palette": ["camel", "white", "brown"],
+      "estimated_price": 450,
+      "description": "Camel tailored blazer over a white silk blouse, camel wide-leg trousers, and brown leather mule heels — a sleek, powerful, all-season professional power look.",
+      "items": {
+        "top": "Camel structured blazer + white silk blouse",
+        "bottom": "Camel wide-leg tailored trousers",
+        "shoes": "Brown leather mules or block-heel pumps",
+        "accessories": "Gold watch, minimal jewellery, structured tote"
+      },
+      "tags": ["power-look", "camel", "professional", "blazer", "women", "monochromatic"],
+      "why": "Tonal camel dressing (blazer + matching trousers) creates a monochromatic power look that reads expensive and intentional in any professional setting."
+    },
+    {
+      "id": "outfit_038",
+      "style": "streetwear",
+      "season": ["winter"],
+      "occasion": ["casual", "hangout"],
+      "gender": "women",
+      "color_palette": ["black", "grey", "white"],
+      "estimated_price": 320,
+      "description": "Black oversized puffer jacket with a grey cropped hoodie underneath, black high-waist leggings, and chunky white Ugg-style boots. Streetwear utility meets winter comfort.",
+      "items": {
+        "top": "Black puffer jacket + grey cropped hoodie",
+        "bottom": "Black high-waist ribbed leggings",
+        "shoes": "Chunky white platform boots or Ugg Ultramini",
+        "accessories": "Black knit beanie, crossbody mini bag"
+      },
+      "tags": ["puffer", "winter", "female", "casual", "streetwear", "cozy"],
+      "why": "Puffer jackets over cropped hoodies is the generation-Z winter formula. Black-grey-white keeps it sharp and intentional despite the cozy silhouette."
+    },
+    {
+      "id": "outfit_039",
+      "style": "smart",
+      "season": ["summer"],
+      "occasion": ["date", "evening", "dinner"],
+      "gender": "men",
+      "color_palette": ["white", "tan", "brown"],
+      "estimated_price": 290,
+      "description": "Fitted white linen shirt (tucked), tan slim chinos, and brown leather loafers. The quintessential summer evening date look — clean, confident, effortless.",
+      "items": {
+        "top": "White linen slim-fit shirt",
+        "bottom": "Tan slim chinos",
+        "shoes": "Brown leather penny loafers",
+        "accessories": "Brown belt, gold watch"
+      },
+      "tags": ["summer", "date", "linen", "smart-casual", "men", "white-tan", "evening"],
+      "why": "Linen in white paired with tan chinos is the summer date outfit that's impossible to overdo. It communicates effort without showing it."
+    },
+    {
+      "id": "outfit_040",
+      "style": "traditional",
+      "season": ["any"],
+      "occasion": ["casual-traditional", "family"],
+      "gender": "women",
+      "color_palette": ["deep-blue", "gold", "white"],
+      "estimated_price": 400,
+      "description": "Deep blue everyday Moroccan kaftan with subtle gold trim, white babouches, and minimal gold jewellery. Elegant, comfortable, and authentically Moroccan for family occasions.",
+      "items": {
+        "top": "Deep blue simple kaftan with gold neck trim",
+        "bottom": "Full-length kaftan",
+        "shoes": "White or gold flat babouches",
+        "accessories": "Gold chain, simple gold earrings"
+      },
+      "tags": ["kaftan", "traditional", "moroccan", "everyday", "family", "women", "blue"],
+      "why": "A simple, well-cut kaftan in deep blue with gold trim strikes the ideal balance between casual tradition and elegant occasion-readiness."
+    },
+    {
+      "id": "outfit_041",
+      "style": "formal",
+      "season": ["fall", "winter"],
+      "occasion": ["gala", "party", "dinner"],
+      "gender": "women",
+      "color_palette": ["deep-burgundy", "gold", "black"],
+      "estimated_price": 720,
+      "description": "Deep burgundy velvet wrap dress with gold jewellery and strappy black heels. A sensual, sophisticated evening look for galas and upscale dinners.",
+      "items": {
+        "top": "Deep burgundy velvet wrap-style bodice",
+        "bottom": "Fitted midi velvet skirt",
+        "shoes": "Black strappy stiletto heels",
+        "accessories": "Gold statement earrings, gold clutch"
+      },
+      "tags": ["velvet", "burgundy", "gala", "female", "wrap-dress", "evening", "luxe"],
+      "why": "Burgundy velvet is autumn/winter's most luxurious fabric-colour combination. The wrap silhouette is universally flattering and effortlessly sensual."
+    },
+    {
+      "id": "outfit_042",
+      "style": "smart",
+      "season": ["any"],
+      "occasion": ["work", "meeting", "presentation"],
+      "gender": "men",
+      "color_palette": ["olive", "white", "tan"],
+      "estimated_price": 350,
+      "description": "Olive green blazer over a white slim dress shirt, camel chinos, and tan leather monk-strap shoes. Creative professional look that balances individuality with polish.",
+      "items": {
+        "top": "Olive green unstructured blazer + white slim shirt",
+        "bottom": "Camel slim chinos",
+        "shoes": "Tan leather monk-strap shoes",
+        "accessories": "No tie, silver minimal watch"
+      },
+      "tags": ["creative-professional", "olive", "smart-casual", "men", "unstructured-blazer"],
+      "why": "An olive blazer signals creative confidence while maintaining professionalism. Monk-strap shoes are the most underrated footwear choice for men."
+    },
+    {
+      "id": "outfit_043",
+      "style": "streetwear",
+      "season": ["summer"],
+      "occasion": ["casual", "festival", "hangout"],
+      "gender": "women",
+      "color_palette": ["denim", "white", "tan"],
+      "estimated_price": 190,
+      "description": "Denim micro shorts with a white fitted tank top, white Converse, and a tan crochet tote. Festival-ready summer streetwear — laid-back and effortlessly cool.",
+      "items": {
+        "top": "White ribbed fitted tank top",
+        "bottom": "Light-wash denim micro shorts",
+        "shoes": "White low-top Converse",
+        "accessories": "Gold layered necklaces, tan crochet bag, sunnies"
+      },
+      "tags": ["festival", "summer", "denim", "streetwear", "female", "casual", "boho"],
+      "why": "Denim shorts + white tank + Converse is the unbeatable summer casual formula. Crochet bags and gold layers elevate it into festival-chic territory."
+    },
+    {
+      "id": "outfit_044",
+      "style": "formal",
+      "season": ["spring", "summer"],
+      "occasion": ["party", "garden-party", "brunch"],
+      "gender": "women",
+      "color_palette": ["yellow", "white"],
+      "estimated_price": 340,
+      "description": "Bright canary yellow linen blazer suit (matching shorts or wide-leg trousers) with a white bodysuit and white leather mules. Bold, optimistic, and summer-perfect.",
+      "items": {
+        "top": "Yellow linen blazer + white bodysuit underneath",
+        "bottom": "Matching yellow linen wide-leg trousers",
+        "shoes": "White leather block-heel mules",
+        "accessories": "White clutch, minimal gold jewellery"
+      },
+      "tags": ["yellow", "power-suit", "summer", "brunch", "female", "bold", "linen"],
+      "why": "A full yellow linen set is the most confident summer fashion statement you can make. Canary yellow with white is fresh, modern, and makes you the most memorable person in any room."
+    },
+    {
+      "id": "outfit_045",
+      "style": "smart",
+      "season": ["winter"],
+      "occasion": ["casual", "weekend", "shopping"],
+      "gender": "women",
+      "color_palette": ["cream", "camel", "brown"],
+      "estimated_price": 310,
+      "description": "Cream ribbed co-ord set (long-sleeved top + wide-leg trousers) with a camel longline coat, brown loafers, and a structured brown tote. Quiet luxury winter weekend dressing.",
+      "items": {
+        "top": "Cream ribbed knit long-sleeve top + camel coat",
+        "bottom": "Cream ribbed wide-leg trousers",
+        "shoes": "Brown leather loafers",
+        "accessories": "Brown structured tote, gold chain belt optional"
+      },
+      "tags": ["quiet-luxury", "cream", "camel", "winter", "women", "minimalist", "co-ord"],
+      "why": "Cream ribbed co-ords under a camel coat perfectly embody quiet luxury — understated, expensive-looking, and seasonally perfect."
+    },
+    {
+      "id": "outfit_046",
+      "style": "streetwear",
+      "season": ["fall", "spring"],
+      "occasion": ["casual", "hangout"],
+      "gender": "men",
+      "color_palette": ["grey", "black", "red"],
+      "estimated_price": 270,
+      "description": "Grey marl crewneck sweatshirt, black slim-tapered joggers with a subtle red stripe, and red-accented Nike Air Max. A sporty, cohesive street look built around a bold red accent.",
+      "items": {
+        "top": "Grey marl oversized crewneck sweatshirt",
+        "bottom": "Black slim-tapered jogger with red stripe",
+        "shoes": "Black/red Nike Air Max or Jordan 1",
+        "accessories": "None needed"
+      },
+      "tags": ["sweatshirt", "jogger", "streetwear", "men", "sporty", "red-accent", "clean"],
+      "why": "A single pop of red across trouser stripe and shoe ties the look together without effort. Grey + black + red is a foolproof streetwear tonal anchor."
+    },
+    {
+      "id": "outfit_047",
+      "style": "formal",
+      "season": ["winter"],
+      "ocasion": ["dinner", "party", "gala"],
+      "gender": "women",
+      "color_palette": ["midnight-blue", "silver"],
+      "estimated_price": 680,
+      "description": "Midnight blue floor-length satin dress with silver jewellery and silver heels. Deeply elegant and cinematic — the perfect formal evening look for winter galas and dinners.",
+      "items": {
+        "top": "Midnight blue satin cowl-neck bodice",
+        "bottom": "Floor-length fitted satin skirt",
+        "shoes": "Silver strappy stilettos",
+        "accessories": "Silver statement necklace, silver clutch"
+      },
+      "tags": ["midnight-blue", "satin", "gala", "formal", "women", "silver", "elegant"],
+      "why": "Midnight blue satin is the sophisticated alternative to black for formal evening events. Silver accessories create a moonlit, cinematic effect."
+    },
+    {
+      "id": "outfit_048",
+      "style": "traditional",
+      "season": ["summer"],
+      "occasion": ["wedding", "eid", "ceremony"],
+      "gender": "men",
+      "color_palette": ["white", "gold"],
+      "estimated_price": 800,
+      "description": "All-white premium cotton jabador with intricate white-on-white and gold embroidery, gold babouches, and a brown leather ceinture belt. Pristine and festive.",
+      "items": {
+        "top": "White premium jabador top with gold embroidery detail",
+        "bottom": "Matching white jabador trousers",
+        "shoes": "Gold leather babouches",
+        "accessories": "Brown ceinture (traditional belt)"
+      },
+      "tags": ["white-jabador", "traditional", "moroccan", "eid", "summer", "men", "gold"],
+      "why": "A white jabador with gold detail is the most celebratory traditional men's look. Worn for Eid, summer weddings, and major family ceremonies."
+    },
+    {
+      "id": "outfit_049",
+      "style": "smart",
+      "season": ["spring", "summer"],
+      "occasion": ["brunch", "casual", "outdoor"],
+      "gender": "women",
+      "color_palette": ["mint", "white", "gold"],
+      "estimated_price": 210,
+      "description": "Mint green linen shorts suit (blazer + wide shorts) with a white top, flat white sandals, and gold jewellery. A fresh, elevated weekend look.",
+      "items": {
+        "top": "Mint linen blazer + white fitted tank or bodysuit",
+        "bottom": "Matching mint wide-leg linen shorts",
+        "shoes": "White flat leather sandals",
+        "accessories": "Gold hoops, gold bracelet, woven bag"
+      },
+      "tags": ["mint", "linen", "shorts-suit", "women", "brunch", "spring", "fresh"],
+      "why": "A linen shorts suit is the 2025 answer to the all-weather blazer. Mint-white feels refreshing and intentional for weekend brunch or outdoor events."
+    },
+    {
+      "id": "outfit_050",
+      "style": "streetwear",
+      "season": ["any"],
+      "occasion": ["casual", "campus", "errands"],
+      "gender": "men",
+      "color_palette": ["black"],
+      "estimated_price": 200,
+      "description": "All-black monochrome street look: black oversized tee, black slim joggers, black sneakers. The signature uniform of minimalist streetwear — effortless, intentional, sharp.",
+      "items": {
+        "top": "Black oversized heavyweight tee",
+        "bottom": "Black slim joggers or track pants",
+        "shoes": "Black Nike Air Force 1 Shadow or Adidas NMD",
+        "accessories": "Black baseball cap (optional)"
+      },
+      "tags": ["all-black", "monochrome", "minimal", "streetwear", "men", "campus", "any-season"],
+      "why": "All-black is streetwear's most powerful minimalist statement. When every piece is black, fit and fabric quality become everything — and that intentionality reads as high-fashion."
+    }
+  ]
+}
