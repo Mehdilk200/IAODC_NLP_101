@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-BOT | Assistant CMC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bot-body full-screen-app">
+    <div class="app-layout">
+        <!-- Sidebar / Navigation -->
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo-container">
+                    <img src="{{ url_for('static', filename='logo-cmc.jpeg') }}" alt="Logo CMC"
+                        class="cmc-logo-sidebar">
+                    <h2>C-BOT</h2>
+                </div>
+                <span class="status-badge"><span class="dot"></span> <span data-i18n="bot_status">En ligne</span></span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="{{ url_for('index') }}" class="nav-item"><i class="fas fa-home"></i> <span
+                        data-i18n="bot_nav_home">Page d'accueil</span></a>
+
+                <button id="new-chat-btn" class="nav-item btn-new-chat" style="width: 100%; border: 1px solid var(--accent); background: rgba(0,123,255,0.05); color: var(--primary); margin-top: 1rem; cursor: pointer; justify-content: center; font-family: 'Outfit', sans-serif;">
+                    <i class="fas fa-plus"></i> <span data-i18n="bot_nav_new_chat">Nouvelle discussion</span>
+                </button>
+
+                <div class="nav-section" style="margin-top: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+                    <h3 data-i18n="bot_nav_history" style="margin-bottom: 0.5rem;">Historique</h3>
+                    <div id="chat-history-list" style="overflow-y: auto; flex: 1; max-height: 300px; display: flex; flex-direction: column; gap: 0.2rem;">
+                        <!-- Chat history items will be injected here -->
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3 data-i18n="bot_nav_contacts">Contacts</h3>
+                    <a href="tel:+212500000000" class="nav-item"><i class="fas fa-phone"></i> <span
+                            data-i18n="bot_nav_call">Appeler la CMC</span></a>
+                    <a href="mailto:contact@cmc-casablanca.ma" class="nav-item"><i class="fas fa-envelope"></i> <span
+                            data-i18n="bot_nav_email">Email CMC</span></a>
+                    <a href="https://maps.google.com/?q=Nouaceur+CMC+Casablanca" target="_blank" class="nav-item"><i
+                            class="fas fa-map-marker-alt"></i> <span
+                            data-i18n="bot_nav_location">Localisation</span></a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>CMC Casablanca-Settat</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="app-main">
+            <header class="mobile-header" style="display: flex;">
+                <button id="mobile-menu-btn" class="icon-btn" style="display: none;"><i class="fas fa-bars"></i></button>
+                <h2>C-BOT</h2>
+                <button id="audio-toggle-btn" class="icon-btn" title="Activer/Désactiver l'audio" style="font-size: 1.1rem; color: var(--text-mid); background: var(--bg-light);"><i class="fas fa-volume-up"></i></button>
+            </header>
+
+            <div class="chat-container" id="chat-box">
+                <div class="message bot-message">
+                    <div class="avatar"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        <!-- Initial message is generated on server or hardcoded. It's usually better to let bot handle its own initial msgs, but for now we leave it -->
+                        <p>Bonjour! 👋 Je suis C-BOT, l'assistant intelligent de la CMC Casablanca-Settat. Comment
+                            puis-je vous aider aujourd'hui?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <div class="avatar"><i class="fas fa-robot"></i></div>
+                <div class="dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <div class="quick-replies" id="quick-replies">
+                <button class="qr-btn" data-i18n="qr_inscription">Comment s'inscrire ?</button>
+                <button class="qr-btn" data-i18n="qr_filieres">Quelles sont les filières ?</button>
+                <button class="qr-btn" data-i18n="qr_conditions">Conditions d'admission ?</button>
+                <button class="qr-btn" data-i18n="qr_dates">Dates d'inscription ?</button>
+            </div>
+
+            <div class="chat-input-wrapper">
+                <div class="input-container">
+                    <button id="voice-btn" class="icon-btn voice-btn" title="Activer le micro"><i
+                            class="fas fa-microphone"></i></button>
+                    <input type="text" id="user-input" placeholder="Posez votre question sur la CMC..."
+                        data-i18n="bot_input_placeholder" autocomplete="off">
+                    <button id="send-btn" class="icon-btn send-btn" title="Envoyer"><i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+                <div class="input-footer">
+                    <p data-i18n="bot_footer">C-BOT peut faire des erreurs. Veuillez vérifier les informations
+                        importantes.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='translations.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

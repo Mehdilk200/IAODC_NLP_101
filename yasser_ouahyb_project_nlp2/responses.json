@@ -1,0 +1,58 @@
+{
+  "greeting": [
+    "أهلاً! 👋 أنا C-BOT، المساعد الذكي ديال CMC Casablanca-Settat. كيفاش نقدر نعاونك؟",
+    "Bienvenue à la CMC Casablanca-Settat 👨🎓 Comment puis-je vous aider ?",
+    "Welcome to CMC Casablanca-Settat 👩🎓 How can I help you?"
+  ],
+  "formations": [
+    "CMC Casablanca-Settat كتقدم تكوينات في Digital، Gestion، Industrie، BTP وLogistique. بغيتي تعرف أكثر على شي شعبة معينة؟ 🎓",
+    "La CMC propose des formations en Digital, Gestion, Industrie, BTP et Logistique.",
+    "CMC offers programs in Digital, Management, Industry, BTP and Logistics."
+  ],
+  "conditions": [
+    "الوثائق اللي خاصك: بطاقة التعريف الوطنية، آخر شهادة، صور شمسية، وملف التسجيل. تقدر تسجل مباشرة فالمركز أو عبر بوابة OFPPT 📋",
+    "Documents requis : CIN, dernier diplôme, photos et dossier d'inscription. Inscription possible sur place ou via le portail OFPPT.",
+    "Required documents: National ID, last diploma, photos and registration form. You can register on-site or via the OFPPT portal."
+  ],
+  "duration": [
+    "مدة التكوين كتختلف حسب المسار: Qualification من سنة حتى سنتين، Technicien سنتين، Technicien Spécialisé سنتين ⏱️",
+    "La durée varie selon le niveau: Qualification 1-2 ans, Technicien 2 ans, Technicien Spécialisé 2 ans.",
+    "Training duration depends on the level: Qualification 1-2 years, Technician 2 years, Specialized Technician 2 years."
+  ],
+  "orientation": [
+    "إلى عندك الباك تقدر تختار Technicien أو Technicien Spécialisé حسب التخصص. إلى ما عندكش الباك كاين مسار Qualification 😊 زور صفحة التوجيه باش نساعدك أكثر!",
+    "Avec le Bac vous pouvez intégrer un parcours Technicien ou Technicien Spécialisé. Sans Bac, le niveau Qualification est disponible.",
+    "With a Bac you can apply for Technician or Specialized Technician programs. Without Bac, the Qualification level is available."
+  ],
+  "location": [
+    "CMC Casablanca-Settat كاينة فإقليم النواصر 📍 تقدر تشوف الموقع على Google Maps: https://maps.google.com/?q=Nouaceur+CMC+Casablanca",
+    "La CMC Casablanca-Settat est située à Nouaceur 📍 Retrouvez-nous sur Google Maps: https://maps.google.com/?q=Nouaceur+CMC+Casablanca",
+    "CMC Casablanca-Settat is located in Nouaceur province 📍 Find us on Google Maps."
+  ],
+  "thanks": [
+    "على الرحب والسعة 😊 إذا عندك أي سؤال آخر أنا هنا خدامك!",
+    "Avec plaisir 😊 N'hésitez pas si vous avez d'autres questions.",
+    "You're welcome 😊 Feel free to ask any other question."
+  ],
+  "dates": [
+    "التسجيل مفتوح حالياً عبر بوابة OFPPT أو مباشرة فعين المكان 📅 لا تفوت الفرصة!",
+    "Les inscriptions sont actuellement ouvertes via le portail de l'OFPPT ou directement sur place 📅",
+    "Registrations are currently open via the OFPPT portal or directly on site 📅"
+  ],
+  "contact": [
+    "تقدر تتواصل معانا 📞 عبر:\n• الهاتف: 05 22 XX XX XX\n• البريد الإلكتروني: contact@cmc-casablanca.ma\n• أو تجي مباشرة للمركز فالنواصر 📍",
+    "Contactez-nous 📞 :\n• Téléphone : 05 22 XX XX XX\n• Email : contact@cmc-casablanca.ma\n• Ou venez directement à Nouaceur 📍",
+    "Contact us 📞 :\n• Phone: 05 22 XX XX XX\n• Email: contact@cmc-casablanca.ma\n• Or visit us directly at Nouaceur 📍"
+  ],
+  "horaires": [
+    "أوقات العمل ديالنا 🕐:\n• الإثنين → الجمعة: 8h30 - 17h00\n• السبت: 9h00 - 13h00\n• الأحد: مغلق ❌",
+    "Nos horaires d'ouverture 🕐 :\n• Lundi → Vendredi : 8h30 - 17h00\n• Samedi : 9h00 - 13h00\n• Dimanche : Fermé ❌",
+    "Our opening hours 🕐 :\n• Monday → Friday: 8:30 AM - 5:00 PM\n• Saturday: 9:00 AM - 1:00 PM\n• Sunday: Closed ❌"
+  ],
+  "about_cmc": [
+    "مدينة المهن والكفاءات الدار البيضاء-سطات 🏫 هي مؤسسة حديثة للتكوين المهني تهدف إلى إعداد الشباب وتأهيلهم لاكتساب مهارات تتوافق مع متطلبات سوق الشغل. تقدم تكوينات في الصناعة، الرقمنة، السياحة، التجارة والفلاحة — مع تكوين تطبيقي في ورشات مجهزة وفترات تدريب داخل الشركات. 🎓",
+    "La Cité des Métiers et des Compétences Casablanca-Settat 🏫 est un établissement moderne de formation professionnelle destiné à former les jeunes selon les besoins du marché du travail. Elle propose des filières en industrie, digital, tourisme, commerce et agriculture — avec un apprentissage pratique en ateliers équipés et des stages en entreprise. 🎓",
+    "The City of Trades and Skills Casablanca-Settat 🏫 is a modern vocational training center designed to equip young people with professional skills that match the job market. It offers programs in industry, digital technology, tourism, business and agriculture — with practical learning in workshops and company internships. 🎓",
+    "CMC Casablanca-Settat 🏫 hiya wahed l-ma3had kbir dyal formation professionnelle li dar bach t3allem shabab métiers w maharat li talbin f soq choghl. Kat9addem takwin f industrie, digital, tourisme, commerce w agriculture — m3a ta3lim pratique f ateliers mzowdin w stages f charikat. 🎓"
+  ]
+}

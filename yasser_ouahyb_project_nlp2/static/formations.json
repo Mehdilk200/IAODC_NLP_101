@@ -1,0 +1,650 @@
+[
+    {
+        "id": "dev-digital",
+        "titre": {
+            "fr": "Développement Digital",
+            "ar": "التطوير الرقمي"
+        },
+        "secteur": {
+            "fr": "Digital",
+            "ar": "الرقمية"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Cette formation vous apprendra les bases de la programmation, la conception de sites web, le développement d'applications mobiles et les bases de données.</p><ul><li>Bases de données (SQL, NoSQL)</li><li>Développement Web (HTML, CSS, JS)</li><li>Développement Mobile (Android, iOS)</li><li>Méthodologies Agiles</li></ul>",
+            "ar": "<p>سيعلمك هذا التكوين أساسيات البرمجة، تصميم مواقع الويب، تطوير تطبيقات الهاتف المحمول وقواعد البيانات.</p><ul><li>قواعد البيانات (SQL، NoSQL)</li><li>تطوير الويب (HTML، CSS، JS)</li><li>تطوير الهاتف المحمول (Android، iOS)</li><li>المنهجيات الرشيقة Agiles</li></ul>"
+        },
+        "debouches": {
+            "fr": [
+                "Développeur Front-End / Back-End",
+                "Développeur Full Stack",
+                "Développeur Mobile",
+                "Intégrateur Web"
+            ],
+            "ar": [
+                "مطور واجهة أمامية / خلفية",
+                "مطور ويب متكامل",
+                "مطور تطبيقات الموبايل",
+                "مدمج ويب"
+            ]
+        }
+    },
+    {
+        "id": "infra-reseau",
+        "titre": {
+            "fr": "Infrastructures Digitales",
+            "ar": "البنيات التحتية الرقمية"
+        },
+        "secteur": {
+            "fr": "Digital",
+            "ar": "الرقمية"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Formation axée sur la conception, le déploiement et la maintenance des réseaux informatiques et systèmes de serveurs.</p><ul><li>Routage et commutation</li><li>Administration des systèmes Windows / Linux</li><li>Sécurité des réseaux</li></ul>",
+            "ar": "<p>تكوين يركز على تصميم ونشر وصيانة شبكات الكمبيوتر وأنظمة الخوادم.</p><ul><li>التوجيه والتبديل</li><li>إدارة أنظمة التشغيل Windows / Linux</li><li>أمن الشبكات</li></ul>"
+        },
+        "debouches": {
+            "fr": [
+                "Administrateur Réseaux",
+                "Administrateur Systèmes",
+                "Technicien Support Informatique"
+            ],
+            "ar": [
+                "مسؤول شبكات",
+                "مسؤول أنظمة",
+                "تقني دعم معلوماتي"
+            ]
+        }
+    },
+    {
+        "id": "gestion-entreprise",
+        "titre": {
+            "fr": "Gestion des Entreprises",
+            "ar": "تسيير المقاولات"
+        },
+        "secteur": {
+            "fr": "Gestion",
+            "ar": "التسيير"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Ce programme couvre tous les aspects de la gestion administrative, financière et commerciale d'une entreprise.</p><ul><li>Comptabilité générale et analytique</li><li>Marketing et actions commerciales</li><li>Gestion des Ressources Humaines</li></ul>",
+            "ar": "<p>يغطي هذا البرنامج جميع جوانب الإدارة الإدارية والمالية والتجارية للشركة.</p><ul><li>المحاسبة العامة والتحليلية</li><li>التسويق والإجراءات التجارية</li><li>إدارة الموارد البشرية</li></ul>"
+        },
+        "debouches": {
+            "fr": [
+                "Assistant de Gestion",
+                "Comptable",
+                "Assistant RH"
+            ],
+            "ar": [
+                "مساعد إداري",
+                "محاسب",
+                "مساعد في الموارد البشرية"
+            ]
+        }
+    },
+    {
+        "id": "cuisine-gastromique",
+        "titre": {
+            "fr": "Cuisine Gastronomique",
+            "ar": "الطبخ وفنون الطهي"
+        },
+        "secteur": {
+            "fr": "Tourisme",
+            "ar": "السياحة"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Apprentissage des techniques culinaires de base et avancées, gestion des stocks et respect des normes d'hygiène.</p><ul><li>Techniques culinaires</li><li>Pâtisserie de base</li><li>Hygiène et sécurité alimentaire</li></ul>",
+            "ar": "<p>تعلم تقنيات الطهي الأساسية والمتقدمة وإدارة المخزون واحترام معايير النظافة.</p><ul><li>تقنيات الطبخ</li><li>أساسيات الحلويات</li><li>النظافة وسلامة الغذاء</li></ul>"
+        },
+        "debouches": {
+            "fr": [
+                "Cuisinier",
+                "Chef de partie",
+                "Commis de cuisine"
+            ],
+            "ar": [
+                "طباخ",
+                "رئيس قسم مطبخ",
+                "مساعد طباخ"
+            ]
+        }
+    },
+    {
+        "id": "electromecanique",
+        "titre": {
+            "fr": "Électromécanique des Systèmes Automatisés",
+            "ar": "الكهروميكانيكا للأنظمة الآلية"
+        },
+        "secteur": {
+            "fr": "Industrie",
+            "ar": "الصناعة"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Maintenance et réparation de machines industrielles combinant mécanique, électricité et automatisme.</p><ul><li>Électrotechnique</li><li>Mécanique industrielle</li><li>Automates programmables</li></ul>",
+            "ar": "<p>صيانة وإصلاح الآلات الصناعية التي تجمع بين الميكانيكا والكهرباء والأتمتة.</p><ul><li>التقنيات الكهربائية</li><li>الميكانيكا الصناعية</li><li>وحدات التحكم المنطقية القابلة للبرمجة (PLC)</li></ul>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien de Maintenance",
+                "Électromécanicien",
+                "Automaticien"
+            ],
+            "ar": [
+                "تقني صيانة",
+                "كهروميكانيكي",
+                "مختص في الآليات المبرمجة"
+            ]
+        }
+    },
+    {
+        "id": "ind-gm",
+        "titre": {
+            "fr": "Génie mécanique",
+            "ar": "الهندسة الميكانيكية"
+        },
+        "secteur": {
+            "fr": "Industrie",
+            "ar": "الصناعة"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Conception et maintenance des systèmes mécaniques industriels.</p>",
+            "ar": "<p>تصميم وصيانة الأنظمة الميكانيكية الصناعية.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien mécanique",
+                "Responsable maintenance",
+                "Technicien production industrielle"
+            ],
+            "ar": [
+                "تقني ميكانيك",
+                "مسؤول الصيانة",
+                "تقني إنتاج صناعي"
+            ]
+        }
+    },
+    {
+        "id": "ind-mi",
+        "titre": {
+            "fr": "Maintenance industrielle",
+            "ar": "الصيانة الصناعية"
+        },
+        "secteur": {
+            "fr": "Industrie",
+            "ar": "الصناعة"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Maintenance et réparation des machines industrielles.</p>",
+            "ar": "<p>صيانة وإصلاح الآلات الصناعية.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien maintenance",
+                "Agent maintenance industrielle"
+            ],
+            "ar": [
+                "تقني صيانة",
+                "عامل صيانة صناعية"
+            ]
+        }
+    },
+    {
+        "id": "ind-aut",
+        "titre": {
+            "fr": "Automatisation industrielle",
+            "ar": "الأتمتة الصناعية"
+        },
+        "secteur": {
+            "fr": "Industrie",
+            "ar": "الصناعة"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Programmation et gestion des systèmes automatisés.</p>",
+            "ar": "<p>برمجة وإدارة الأنظمة الآلية.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien automatisme",
+                "Technicien robotique"
+            ],
+            "ar": [
+                "تقني أتمتة",
+                "تقني روبوتيك"
+            ]
+        }
+    },
+    {
+        "id": "ind-mec",
+        "titre": {
+            "fr": "Mécatronique",
+            "ar": "الميكاترونيك"
+        },
+        "secteur": {
+            "fr": "Industrie",
+            "ar": "الصناعة"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Combinaison de mécanique, électronique et informatique industrielle.</p>",
+            "ar": "<p>مزيج من الميكانيكا، الإلكترونيات والمعلوماتية الصناعية.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien mécatronique",
+                "Technicien robotique"
+            ],
+            "ar": [
+                "تقني ميكاترونيك",
+                "تقني روبوتيك"
+            ]
+        }
+    },
+    {
+        "id": "dig-web",
+        "titre": {
+            "fr": "Développement Web Full Stack",
+            "ar": "تطوير الويب المتكامل"
+        },
+        "secteur": {
+            "fr": "Digital et Intelligence Artificielle",
+            "ar": "الرقمية والذكاء الاصطناعي"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Développement d'applications web frontend et backend.</p>",
+            "ar": "<p>تطوير تطبيقات الويب الأمامية والخلفية.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Développeur web",
+                "Développeur full stack",
+                "Freelancer web"
+            ],
+            "ar": [
+                "مطور ويب",
+                "مطور متكامل",
+                "مستقل في مجال الويب"
+            ]
+        }
+    },
+    {
+        "id": "dig-pyt",
+        "titre": {
+            "fr": "Développement Python",
+            "ar": "تطوير بايثون"
+        },
+        "secteur": {
+            "fr": "Digital et Intelligence Artificielle",
+            "ar": "الرقمية والذكاء الاصطناعي"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Programmation backend et data avec Python.</p>",
+            "ar": "<p>برمجة الخلفية والبيانات باستخدام بايثون.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Développeur Python",
+                "Backend developer"
+            ],
+            "ar": [
+                "مطور بايثون",
+                "مطور خلفية"
+            ]
+        }
+    },
+    {
+        "id": "dig-cyb",
+        "titre": {
+            "fr": "Cybersécurité",
+            "ar": "الأمن السيبراني"
+        },
+        "secteur": {
+            "fr": "Digital et Intelligence Artificielle",
+            "ar": "الرقمية والذكاء الاصطناعي"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Protection des systèmes informatiques et réseaux.</p>",
+            "ar": "<p>حماية أنظمة المعلومات والشبكات.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien cybersécurité",
+                "Analyste sécurité informatique"
+            ],
+            "ar": [
+                "تقني أمن سيبراني",
+                "محلل أمن معلوماتي"
+            ]
+        }
+    },
+    {
+        "id": "dig-ux",
+        "titre": {
+            "fr": "UI / UX Design",
+            "ar": "تصميم واجهة المستخدم"
+        },
+        "secteur": {
+            "fr": "Digital et Intelligence Artificielle",
+            "ar": "الرقمية والذكاء الاصطناعي"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Design d'interfaces utilisateur pour applications web et mobile.</p>",
+            "ar": "<p>تصميم واجهات المستخدم لتطبيقات الويب والموبايل.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "UI designer",
+                "UX designer",
+                "Web designer"
+            ],
+            "ar": [
+                "مصمم واجهات المستخدم",
+                "مصمم تجربة المستخدم",
+                "مصمم ويب"
+            ]
+        }
+    },
+    {
+        "id": "dig-data",
+        "titre": {
+            "fr": "Data & Business Intelligence",
+            "ar": "البيانات وذكاء الأعمال"
+        },
+        "secteur": {
+            "fr": "Digital et Intelligence Artificielle",
+            "ar": "الرقمية والذكاء الاصطناعي"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Analyse et visualisation de données.</p>",
+            "ar": "<p>تحليل وتصور البيانات.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Data analyst",
+                "Business intelligence analyst"
+            ],
+            "ar": [
+                "محلل بيانات",
+                "محلل ذكاء الأعمال"
+            ]
+        }
+    },
+    {
+        "id": "com-ge",
+        "titre": {
+            "fr": "Gestion des entreprises",
+            "ar": "تسيير المقاولات"
+        },
+        "secteur": {
+            "fr": "Gestion et Commerce",
+            "ar": "التسيير والتجارة"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Gestion administrative et organisation des entreprises.</p>",
+            "ar": "<p>التسيير الإداري وتنظيم المقاولات.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Assistant administratif",
+                "Gestionnaire PME"
+            ],
+            "ar": [
+                "مساعد إداري",
+                "مسير مقاولة صغرى ومتوسطة"
+            ]
+        }
+    },
+    {
+        "id": "com-cf",
+        "titre": {
+            "fr": "Comptabilité et Finance",
+            "ar": "المحاسبة والمالية"
+        },
+        "secteur": {
+            "fr": "Gestion et Commerce",
+            "ar": "التسيير والتجارة"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Gestion financière et comptable.</p>",
+            "ar": "<p>التسيير المالي والمحاسباتي.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Comptable",
+                "Assistant financier"
+            ],
+            "ar": [
+                "محاسب",
+                "مساعد مالي"
+            ]
+        }
+    },
+    {
+        "id": "com-md",
+        "titre": {
+            "fr": "Marketing Digital",
+            "ar": "التسويق الرقمي"
+        },
+        "secteur": {
+            "fr": "Gestion et Commerce",
+            "ar": "التسيير والتجارة"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Stratégies marketing sur internet et réseaux sociaux.</p>",
+            "ar": "<p>استراتيجيات التسويق عبر الإنترنت والشبكات الاجتماعية.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Community manager",
+                "Digital marketer"
+            ],
+            "ar": [
+                "مدير مجتمعات افتراضية",
+                "مسوق رقمي"
+            ]
+        }
+    },
+    {
+        "id": "btp-gc",
+        "titre": {
+            "fr": "Génie Civil",
+            "ar": "الهندسة المدنية"
+        },
+        "secteur": {
+            "fr": "Bâtiment et Travaux Publics",
+            "ar": "البناء والأشغال العمومية"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Conception et suivi de projets de construction.</p>",
+            "ar": "<p>تصميم وتتبع مشاريع البناء.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Technicien génie civil",
+                "Conducteur de travaux"
+            ],
+            "ar": [
+                "تقني هندسة مدنية",
+                "مشرف على الأشغال"
+            ]
+        }
+    },
+    {
+        "id": "btp-db",
+        "titre": {
+            "fr": "Dessin Bâtiment",
+            "ar": "رسم المباني"
+        },
+        "secteur": {
+            "fr": "Bâtiment et Travaux Publics",
+            "ar": "البناء والأشغال العمومية"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Création de plans techniques de bâtiments.</p>",
+            "ar": "<p>إنشاء المخططات التقنية للمباني.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Dessinateur bâtiment",
+                "Technicien DAO"
+            ],
+            "ar": [
+                "رسام مباني",
+                "تقني تصميم مدعم بالحاسوب"
+            ]
+        }
+    },
+    {
+        "id": "log-gl",
+        "titre": {
+            "fr": "Gestion Logistique",
+            "ar": "تسيير اللوجستيك"
+        },
+        "secteur": {
+            "fr": "Transport et Logistique",
+            "ar": "النقل واللوجستيك"
+        },
+        "niveau": {
+            "fr": "Technicien",
+            "ar": "تقني"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Gestion des flux de marchandises.</p>",
+            "ar": "<p>تسيير تدفق السلع.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Agent logistique",
+                "Responsable stock"
+            ],
+            "ar": [
+                "عامل لوجستيك",
+                "مسؤول المخزون"
+            ]
+        }
+    },
+    {
+        "id": "log-scm",
+        "titre": {
+            "fr": "Supply Chain Management",
+            "ar": "إدارة سلسلة التوريد"
+        },
+        "secteur": {
+            "fr": "Transport et Logistique",
+            "ar": "النقل واللوجستيك"
+        },
+        "niveau": {
+            "fr": "Technicien Spécialisé",
+            "ar": "تقني متخصص"
+        },
+        "duree": "2 ans / سنتان",
+        "programme": {
+            "fr": "<p>Gestion globale de la chaîne logistique.</p>",
+            "ar": "<p>الإدارة الشاملة لسلسلة التوريد.</p>"
+        },
+        "debouches": {
+            "fr": [
+                "Supply chain analyst",
+                "Responsable logistique"
+            ],
+            "ar": [
+                "محلل سلسلة التوريد",
+                "مسؤول لوجستيك"
+            ]
+        }
+    }
+]
