@@ -234,13 +234,27 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         }
 
-        msgDiv.innerHTML = `
-            <div class="avatar"><i class="fas ${avatarIcon}"></i></div>
-            <div class="message-content">
-                <p>${text}</p>
-                ${feedbackHtml}
-            </div>
-        `;
+        // Build message DOM safely: do not interpret text as HTML
+        const avatarDiv = document.createElement("div");
+        avatarDiv.classList.add("avatar");
+        // avatarIcon is controlled by code, not by user input
+        avatarDiv.innerHTML = `<i class="fas ${avatarIcon}"></i>`;
+
+        const contentDiv = document.createElement("div");
+        contentDiv.classList.add("message-content");
+
+        const textParagraph = document.createElement("p");
+        // Use textContent so user/DOM input is not treated as HTML
+        textParagraph.textContent = text;
+        contentDiv.appendChild(textParagraph);
+
+        if (feedbackHtml) {
+            // feedbackHtml is constructed by this script for bot messages only
+            contentDiv.insertAdjacentHTML("beforeend", feedbackHtml);
+        }
+
+        msgDiv.appendChild(avatarDiv);
+        msgDiv.appendChild(contentDiv);
 
         chatBox.appendChild(msgDiv);
         chatBox.scrollTop = chatBox.scrollHeight;
