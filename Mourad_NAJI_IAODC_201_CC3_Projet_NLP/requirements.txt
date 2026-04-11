@@ -7,7 +7,7 @@ python-dotenv
 requests==2.33.0
 httpx
 sentence-transformers==2.7.0
-transformers==4.53.0
+transformers==5.0.0rc3
 faiss-cpu==1.8.0
 torch==2.8.0
 numpy==1.26.4
